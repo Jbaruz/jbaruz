@@ -1,0 +1,8 @@
+<%-include('partials/header.ejs')%>
+<%-include('partials/main_nav.ejs')%>
+<!-- Filename: error.ejs | Author: Juan Arevalo | Date: 22-08-2023 -->
+<h1><%= message %></h1>
+<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre>
+<%-include ('partials/bottom_nav.ejs')%>
+<%-include ('partials/footer.ejs')%>

@@ -1,0 +1,10 @@
+/* Filename: app.css | Author: Juan Arevalo | Date: 22-08-2023 */
+.navbar.fixed-bottom {
+  height: 40px;
+}
+
+.navbar-brand img{
+
+  width: 40px;
+  height: 40px;
+}

@@ -1,6 +1,8 @@
 <%-include('partials/header.ejs')%>
 
 <!-- Filename: index.ejs | Author: Juan Arevalo | Date: 24-08-2023 -->
+  <div class="d-flex justify-content-center align-items-center vh-100">
+    
     <main class="container py-4">
       <div class="jumbotron text-between">
         <h1 class="display-7">Welcome to the <%=title%> page</h1>
@@ -16,18 +18,18 @@
                 <blockquote class="blockquote mb-0">
                   <p>"Challenging oneself in life is the best way to keep evolving; nothing is ever too late when you
                     decide to be the owner of the results in your life."</p>
-                  <footer class="blockquote-footer">Jbaruz <cite title="Source Title">-</cite></footer>
-                </blockquote>
+                    <footer class="blockquote-footer">Jbaruz <cite title="Source Title">-</cite></footer>
+                  </blockquote>
+                  <br>
+                  <blockquote class="blockquote mb-0">
+                    <p>“Learning to code is learning to create and innovate.”</p>
+                    <footer class="blockquote-footer">Enda Kenny, Taoiseach, <cite title="Source Title">Ireland</cite>
+                    </footer>
+                  </blockquote>
+                </div>
                 <br>
-                <blockquote class="blockquote mb-0">
-                  <p>“Learning to code is learning to create and innovate.”</p>
-                  <footer class="blockquote-footer">Enda Kenny, Taoiseach, <cite title="Source Title">Ireland</cite>
-                  </footer>
-                </blockquote>
+                <p> Thank you for comming here!.</p>
               </div>
-              <br>
-              <p> Thank you for comming here!.</p>
-            </div>
           </div>
           <div class="p-2 flex-fill">
             <div class="list-group" style="width: 11rem;">
@@ -41,6 +43,7 @@
         </div>
       </div>
     </main>
+  </div>
 
     <%-include ('partials/bottom_nav.ejs')%>
-      <%-include ('partials/footer.ejs')%>
+    <%-include ('partials/footer.ejs')%>

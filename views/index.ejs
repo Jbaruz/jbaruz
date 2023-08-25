@@ -1,47 +1,50 @@
 <%-include('partials/header.ejs')%>
 
 <!-- Filename: index.ejs | Author: Juan Arevalo | Date: 24-08-2023 -->
-  <div class="d-flex justify-content-center align-items-center vh-100">
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
     <main class="container py-5">
-      <div class="jumbotron">
-          <h1 class="display-4">Embarking on an AI Odyssey!</h1>
-          <p class="lead">Discover the world of AI through the eyes of a Centennial College student.</p>
-      </div>
-      
-      <div class="container bootstrap snippets bootdey">
-          <div class="d-flex flex-sm-row flex-column">
-              <div class="p-3 flex-fill">
-                  <div class="card">
-                      <div class="card-body">
-                          <h2 class="card-title">Hi, I'm Juan!</h2>
-                          <p>Join me as I navigate the fascinating universe of Artificial Intelligence. From projects to insights, experience my academic and personal journey firsthand.</p>
-                          <hr>
-                          <h4>Mission Statement</h4>
-                          <blockquote class="blockquote">
-                              <p>"Challenging oneself in life is the best way to keep evolving; nothing is ever too late when you decide to be the owner of the results in your life."</p>
-                              <footer class="blockquote-footer">Jbaruz</footer>
-                          </blockquote>
-                          <blockquote class="blockquote">
-                              <p>“Learning to code is learning to create and innovate.”</p>
-                              <footer class="blockquote-footer">Enda Kenny, Taoiseach, <cite title="Source Title">Ireland</cite></footer>
-                          </blockquote>
-                          <p class="mt-3">Thank you for visiting!</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="p-3">
-                  <div class="list-group" style="width: 14rem;">
-                      <a href="/about" class="list-group-item list-group-item-action list-group-item-light"><i class="fa-regular fa-address-card"></i> About me</a>
-                      <a href="projects" class="list-group-item list-group-item-action list-group-item-light"><i class="fa-solid fa-list-check"></i> Projects</a>
-                      <a href="/services" class="list-group-item list-group-item-action list-group-item-light"><i class="fa-solid fa-microchip"></i> Services</a>
-                      <a href="/contact" class="list-group-item list-group-item-action list-group-item-light"><i class="fa-regular fa-address-book"></i> Contact me</a>
-                      <a href="/link" class="list-group-item list-group-item-action list-group-item-light"><i class="fa-solid fa-link"></i> Important Links</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </main>
-  </div>
+        <div class="jumbotron text-center bg-gradient-light">
+            <h1 class="display-4">Embarking on an AI Odyssey!</h1>
+            <br>
+            <p class="lead">Discover the world of AI through the eyes of a Centennial College student.</p>
+            <blockquote class="blockquote font-italic">
+                <p>Join me as I navigate the fascinating universe of Artificial Intelligence. From projects to insights, experience my academic and personal journey firsthand.</p>
+            </blockquote>
+            <br>
+        </div>
 
-    <%-include ('partials/bottom_nav.ejs')%>
-    <%-include ('partials/footer.ejs')%>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h2 class="card-title">Hi, I'm Juan!</h2>
+                            <h5 class="mt-4">Mission Statement</h5>
+                            <blockquote class="blockquote">
+                                <p>"Challenging oneself in life is the best way to keep evolving; nothing is ever too late when you decide to be the owner of the results in your life."</p>
+                                <footer class="blockquote-footer">Jbaruz</footer>
+                            </blockquote>
+                            <blockquote class="blockquote">
+                                <p>“Learning to code is learning to create and innovate.”</p>
+                                <footer class="blockquote-footer">Enda Kenny, Taoiseach, <cite title="Source Title">Ireland</cite></footer>
+                            </blockquote>
+                            <p class="mt-3">Thank you for visiting!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="list-group mb-4 shadow-sm">
+                        <a href="/about" class="list-group-item list-group-item-action"><i class="fa-regular fa-address-card mr-2"></i> About me</a>
+                        <a href="projects" class="list-group-item list-group-item-action"><i class="fa-solid fa-list-check mr-2"></i> Projects</a>
+                        <a href="/services" class="list-group-item list-group-item-action"><i class="fa-solid fa-microchip mr-2"></i> Services</a>
+                        <a href="/contact" class="list-group-item list-group-item-action"><i class="fa-regular fa-address-book mr-2"></i> Contact me</a>
+                        <a href="/link" class="list-group-item list-group-item-action"><i class="fa-solid fa-link mr-2"></i> Important Links</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<%-include ('partials/bottom_nav.ejs')%>
+<%-include ('partials/footer.ejs')%>

@@ -1,78 +1,61 @@
 <%-include('partials/header.ejs')%>
-    <%-include('partials/main_nav.ejs')%>
-    <!-- Filename: projects.ejs | Author: Juan Arevalo | Date: 24-08-2023 -->
-    <div class="d-flex justify-content-center">
-        <main class="container py-4 float-sm-start">
-            <div class="jumbotron text-between">
-                <h1 class="display-7">Welcome to the <%=title%> page</h1>
-            </div>
-            <div class="container bootstrap snippets bootdey py-5">
-                <div class="d-flex flex-sm-row flex-column">
-                    <div class="p-2 flex-fill">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header">
-                                Kiruwear App (Mobile App)
-                            </div>
-                            <div class="card-body">
-                                <blockquote class="roboto mb-0">
-                                    <p>Wear control GET remotely and avoid unplanned downtime for P&H4100XPC cable
-                                        shovels.</p>
-                                        <footer class="blockquote-footer mb-2">Winner 2021 Digital transformation <cite
-                                            title="Source Title">- Cerro verde Mine</cite></footer>
-                                        </blockquote>
-                                        <img src="../assets/images/kiru.png" class="card-img rounded img-fluid mt-3"
-                                        style="width: 18rem;" alt="my photo">
-                                        <h5 class="my-1 fs-6">Role</h5>
-                                        <p class="text-muted mb-1 fs-6">Manager and creator</p>
-                                        <p class="text-muted mb-1 fs-6">Languages: Flutter, PHP Codeigniter</p>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="p-2 flex-fill">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header">
-                                Recipes (web app)
-                            </div>
-                            <div class="card-body">
-                                <blockquote class="roboto mb-0">
-                                    <p>Interactive web to share recipes.</p>
-                                    <footer class="blockquote-footer mb-2">First Version <cite title="Source Title">In
-                                            progress</cite></footer>
-                                        </blockquote>
-                                        <img src="../assets/images/reci.png" class="card-img rounded img-fluid mt-3"
-                                        style="width: 18rem;" alt="recipe">
-                                        <h5 class="my-1 fs-6">Role</h5>
-                                <p class="text-muted mb-1 fs-6">Developer</p>
-                                <p class="text-muted mb-1 fs-6">Languages: Python, Flask, MySQL</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 flex-fill">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header">
-                                Personal Portfolio (Web App)
-                            </div>
-                            <div class="card-body">
-                                <blockquote class="roboto mb-0">
-                                    <p>Minimalistic personal portfolio.</p>
-                                    <footer class="blockquote-footer mb-2">First Version <cite title="Source Title">-
-                                        Complete</cite></footer>
-                                    </blockquote>
-                                    <img src="../assets/images/perso.png" class="card-img rounded img-fluid mt-3"
-                                    style="width: 18rem;" alt="Personal Portfolio">
-                                <h5 class="my-1 fs-6">Role</h5>
-                                <p class="text-muted mb-1 fs-6">Developer</p>
-                                <p class="text-muted mb-1 fs-6">Languages: JavaScript - NodeJS - ExpressJS and Express
-                                    Generator</p>
-                                </div>
-                        </div>
-                    </div>
-                    
-                </div>
+<%-include('partials/main_nav.ejs')%>
 
+<!-- Filename: projects.ejs | Author: Juan Arevalo | Date: 28-08-2023 -->
+<div class="d-flex justify-content-center bg-light vh-100">
+    <main class="container py-5">
+        <div class="jumbotron bg-gradient-light text-center">
+            <h1 class="display-7">My Projects</h1>
+        </div>
+
+        <div class="row mt-5">
+            <!-- Kiruwear App -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="../assets/images/kiru.png" alt="Kiruwear App" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Kiruwear App (Mobile App)</h5>
+                        <p>Remote wear control GET to prevent unplanned downtime for P&H4100XPC cable shovels. Awarded the 2021 Digital Transformation at Cerro Verde Mine.</p>
+                        <p><strong>Role:</strong> Manager and Creator</p>
+                        <p><strong>Languages:</strong> Flutter, PHP Codeigniter</p>
+                    </div>
+                    <!-- Award Recognition -->
+                    <div class="card-footer bg-light text-center">
+                        <img src="../assets/images/tech_award.jpg" alt="Kiruwear App Award" class="award-img" style="width: 20%; transition: transform 0.3s;">
+                        <span class="ml-3">For this innovation, I was honored with a prestigious Global Technology Award from the company I collaborated with.</span>
+                    </div>
+                </div>
             </div>
-        </main>
-    </div>
-        
-        <%-include ('partials/bottom_nav.ejs')%>
-        <%-include ('partials/footer.ejs')%>
+
+            <!-- Recipes Web App -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="../assets/images/reci.png" alt="Recipes Web App" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Recipes (Web App)</h5>
+                        <p>An interactive platform for sharing recipes. First version in progress.</p>
+                        <p><strong>Role:</strong> Developer</p>
+                        <p><strong>Languages:</strong> Python, Flask, MySQL</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Portfolio -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="../assets/images/perso.png"" alt="Personal Portfolio Web App" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Personal Portfolio (Web App)</h5>
+                        <p>Minimalistic personal portfolio. Second version in progress.</p>
+                        <p><strong>Role:</strong> Developer</p>
+                        <p><strong>Languages:</strong> JavaScript, NodeJS, ExpressJS, Express Generator</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</div>
+
+<%-include ('partials/bottom_nav.ejs')%>
+<%-include ('partials/footer.ejs')%>

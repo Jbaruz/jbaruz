@@ -1,17 +1,73 @@
 <%-include('partials/header.ejs')%>
 <%-include('partials/main_nav.ejs')%>
+
 <!-- Filename: link.ejs | Author: Juan Arevalo | Date: 22-08-2023 -->
 <main class="container mt-5">
     <h2 class="text-center mb-4">Important Links</h2>
-    <div class="d-flex flex-column align-items-center">
-        <a href="#" class="mb-3">Link 1: Description</a>
-        <a href="#" class="mb-3">Link 2: Description</a>
-        <a href="#" class="mb-3">Link 3: Description</a>
-        <a href="#" class="mb-3">Link 4: Description</a>
-        <a href="#" class="mb-3">Link 5: Description</a>
+    <div class="row justify-content-center">
+        
+        <div class="col-md-4 mb-3">
+            <div class="card text-center">
+                <i class="fa fa-university card-img-top mt-3" style="font-size: 2em; color: #000000;"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Centennial College</h5>
+                    <a href="https://www.centennialcollege.ca/" class="btn btn-light">Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card text-center">
+                <i class="fa fa-database card-img-top mt-3" style="font-size: 2em; color: #000;"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Kaggle</h5>
+                    <a href="https://www.kaggle.com" class="btn btn-light">Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card text-center">
+                <i class="fa fa-code card-img-top mt-3" style="font-size: 2em; color: #000;"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Visualize Code</h5>
+                    <a href="https://pythontutor.com/visualize.html#mode=edit" class="btn btn-light">Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card text-center">
+                <i class="fa fa-file-alt card-img-top mt-3" style="font-size: 2em; color: #000;"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Readme.so</h5>
+                    <a href="https://readme.so/editor" class="btn btn-light">Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card text-center">
+                <i class="fa fa-book card-img-top mt-3" style="font-size: 2em; color: #000;"></i>
+                <div class="card-body">
+                    <h5 class="card-title">API Documentation</h5>
+                    <a href="https://devdocs.io" class="btn btn-light">Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card text-center">
+                <i class="fa fa-project-diagram card-img-top mt-3" style="font-size: 2em; color: #000;"></i>
+                <div class="card-body">
+                    <h5 class="card-title">PlantUML</h5>
+                    <a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000" class="btn btn-light">Visit</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </main>
-
 
 <%-include ('partials/bottom_nav.ejs')%>
 <%-include ('partials/footer.ejs')%>

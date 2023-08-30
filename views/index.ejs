@@ -1,10 +1,12 @@
 <%-include('partials/header.ejs')%>
 
-<!-- Filename: index.ejs | Author: Juan Arevalo | Date: 24-08-2023 -->
+<!-- Filename: index.ejs | Author: Juan Arevalo | Date: 30-08-2023 -->
 <div class="d-flex justify-content-center bg-light vh-100">
     <main class="container py-5">
         <div class="jumbotron text-center bg-gradient-light">
             <h1 class="display-4">Embarking on an AI Odyssey!</h1>
+            <!-- Add this line where you want to display the last updated date -->
+            <p id="lastUpdated">Last Updated: </p>
             <br>
             <p class="lead">Discover the world of AI through the eyes of a Centennial College student.</p>
             <blockquote class="blockquote font-italic">
@@ -48,3 +50,15 @@
 
 <%-include ('partials/bottom_nav.ejs')%>
 <%-include ('partials/footer.ejs')%>
+<script>
+    function getCurrentDate() {
+        const currentDate = new Date();
+        const day = String(currentDate.getDate()).padStart(2, '0');
+        const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // January is 0
+        const year = currentDate.getFullYear();
+
+        return `${day}-${month}-${year}`;
+    }
+
+    document.getElementById('lastUpdated').innerText += getCurrentDate();
+</script>

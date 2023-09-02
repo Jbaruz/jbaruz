@@ -18,21 +18,8 @@
   overflow-y: auto;
 }
 
-.card-img-container{
-  height: 700px; /* Adjust this value based on your preference */
-  width: 420px;;
-  overflow: hidden;
-  }
-
-.card-img-container img.card-img-left {
-  height: 60%;
-  width: 90%;
-  object-fit: cover; /* Ensures the image covers the container without distortion */
-}
-
-.card-img-container img.card-img-right {
-  height: 74%;
-  width: 98%;
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+.card-img-top {
+  height: 320px;  /* or whatever height you prefer */
+  object-fit: cover; /* This will ensure that the images cover the set height and width without distortion */
 }
 

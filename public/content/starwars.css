@@ -7,13 +7,13 @@ body {
 .star-wars-container {
     height: 300px;
     overflow: hidden;
-    perspective: 380px;
+    perspective: 300px;
     position: relative;
 }
 
 .crawl {
     transform-origin: 50% 100%;
-    transform: rotateX(25deg) translateY(30%) translateZ(0);
+    transform: rotateX(25deg) translateY(100%) translateZ(0);
     position: absolute;
     top: 0;
     left: 0;
@@ -23,14 +23,14 @@ body {
     font-size: 200%;
     font-weight: bold;
     text-align: justify;
-    animation: crawl 60s linear infinite;
+    animation: crawl 80s linear infinite;
 }
 
 @keyframes crawl {
     0% {
-        transform: rotateX(25deg) translateY(30%) translateZ(0);
+        transform: rotateX(25deg) translateY(100%) translateZ(0);
     }
     100% {
-        transform: rotateX(25deg) translateY(-180%) translateZ(0);
+        transform: rotateX(25deg) translateY(-380%) translateZ(0);
     }
 }

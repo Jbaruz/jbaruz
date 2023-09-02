@@ -17,3 +17,22 @@
 .d-flex.justify-content-center.bg-light {
   overflow-y: auto;
 }
+
+.card-img-container{
+  height: 470px; /* Adjust this value based on your preference */
+  width: 400px;;
+  overflow: hidden;
+  }
+
+.card-img-container img.card-img-left {
+  height: 50%;
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.card-img-container img.card-img-right {
+  height: 74%;
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+

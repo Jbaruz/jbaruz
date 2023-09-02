@@ -1,113 +1,220 @@
 <%-include('partials/header.ejs')%>
-<%-include('partials/main_nav.ejs')%>
+    <%-include('partials/main_nav.ejs')%>
+        <!-- Filename: projects.ejs | Author: Juan Arevalo | Date: 28-08-2023 -->
+        <div class="d-flex justify-content-center bg-light vh-100">
+            <main class="container py-5">
+                <div class="jumbotron bg-gradient-light text-center">
+                    <h1 class="display-7">My Projects</h1>
+                </div>
 
-<!-- Filename: projects.ejs | Author: Juan Arevalo | Date: 28-08-2023 -->
-<div class="d-flex justify-content-center bg-light vh-100">
-    <main class="container py-5">
-        <div class="jumbotron bg-gradient-light text-center">
-            <h1 class="display-7">My Projects</h1>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    AI and web developer projects
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                As part of the learning experience at Centennial College, I develop these projects. However the AI project is focus on 
+                                what is the next to be useful to the community.
+
+                            </div>
+                            <div class="row align-items-stretch">
+                                <!-- AI Project -->
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card shadow-sm h-100">
+                                            <img src="../assets/images/fatalities_TO.png" alt="Fatal Traffic Collisions"
+                                                class="card-img-top">
+                                            <div class="card-body">
+                                                <h5>AI project</h5>
+                                                <p>Develop a probalistic application to predict accidents in Toronto,
+                                                    according to condition and behavior patterns.</p>
+                                                <p><strong>Role:</strong> AI Developer</p>
+                                                <p><strong>Languages:</strong> Python</p>
+                                                <p><strong>Status:</strong> In progress - first step</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Tournament Project -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card shadow-sm h-100">
+                                            <img src="../assets/images/tournament_web.png"
+                                                alt="Fatal Traffic Collisions" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5>Tournament Creation by Time Travellers Team</h5>
+                                                <p>The Application is about tournament management, part of a group
+                                                    assignment at Centennial College.</p>
+                                                <p><strong>Role:</strong> Backend Developer</p>
+                                                <p><strong>Languages:</strong> Angular, ExpressJS, NodeJS, MongoDB,
+                                                    Angular
+                                                    Material, Git</p>
+                                                <p><strong>Status:</strong> Complete - <a
+                                                        href="https://tournaments-frontend.onrender.com/"
+                                                        target="_blank">Website</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Personal Portfolio -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card shadow-sm h-100">
+                                            <img src="../assets/images/perso.png" alt="Personal Portfolio Web App"
+                                                class="card-img-top">
+                                            <div class="card-body">
+                                                <h5>Personal Portfolio (Web App)</h5>
+                                                <p>Minimalistic personal portfolio.</p>
+                                                <p><strong>Role:</strong> Developer</p>
+                                                <p><strong>Languages:</strong> JavaScript, NodeJS, ExpressJS, Express
+                                                    Generator, Bootstrap, Jquery.</p>
+                                                <p><strong>Status:</strong> In progress - <a
+                                                        href="https://github.com/Jbaruz/jbaruz" target="_blank">Github
+                                                        repo</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Change of direction to technology
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Due to the pandemic, I had to create a tool to help our customer to keep distance between mechanicalls and operators.
+                                The app born to control the wear of the ground enganing tools, during the pre operational inspecction task by operators.
+                                This applicacion was won digital transformation award on Cerro Verde Mine.
+                            </div>
+                            <div class="row align-items-stretch">
+                                <!-- Kiruwear App -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <div class="card-img-container">
+                                            <img src="../assets/images/kiru.png" alt="Kiruwear App"
+                                                class="card-img-left">
+                                            <div class="card-body">
+                                                <h5>Kiruwear App (Mobile App)</h5>
+                                                <p>Remote wear control app to prevent unplanned downtime for P&H4100XPC
+                                                    cable shovels.
+                                                    This was awarded the 2021 Digital Transformation at Cerro Verde
+                                                    Mine.
+                                                </p>
+                                                <p><strong>Role:</strong> Manager and Creator</p>
+                                                <p><strong>Languages:</strong> Flutter, PHP Codeigniter</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Kiruwear award-->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <div class="card-img-container">
+                                            <img src="../assets/images/tech_award.jpg" alt="Kiruwear App Award"
+                                                class="card-img-right">
+                                            <div class="card-body">
+                                                <h5>2020 Technology Award</h5>
+                                                <p>For this innovation, I received a prestigious Global
+                                                    Technology Award from the company I collaborated with.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Mining proyectos focus on wear abrasion solutions 
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            During the eighteen years of working as a thecnical global supporter in speaking spanish latin america region.
+                            I had been working on several projects, the most important of which where as follows:
+                        </div>
+                        <div class="row align-items-stretch">
+                            <div class="row">
+                                <!-- Colombia -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <img src="../assets/images/dragline.png" alt="Dragline bucket"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <h5>Assembly Dragline Bucket</h5>
+                                            <p>Assembled 115CY Profill Bucket in 20 days.</p>
+                                            <p><strong>Role:</strong> Lead Supervisor</p>
+                                            <p><strong>Customer:</strong> Drummond mine - Colombia (2014)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Panama -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <img src="../assets/images/bucket_panama.png" alt="Aquadigger bucket Dredge"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <h5>Rebuild for Manufacturer Warranty</h5>
+                                            <p>03 Aquadigger Hoe Bucket rebuilt for Aleman Zubieta Dredge - Dredging
+                                                for the Culebra
+                                                Cut Expansion Project.</p>
+                                            <p><strong>Role:</strong> Lead Supervisor</p>
+                                            <p><strong>Customer:</strong> Autoridad del Canal de Panama (2013-2014)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Peru -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <img src="../assets/images/ant_cable.png" alt="Cable shovel photo"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <h5>Six Sigma Project</h5>
+                                            <p>Decreased cable shovel downtime from GET issues from 30 hours to 5
+                                                hours per month.
+                                            </p>
+                                            <p><strong>Role:</strong> Supervisor</p>
+                                            <p><strong>Customer:</strong> Antamina Mine - Peru (2010)</p>
+                                        </div>
+                                        <div class="card-footer bg-light text-center">
+                                            <img src="../assets/images/Antamina_certificated.png"
+                                                alt="Kiruwear App Award" class="award-img"
+                                                style="width: 20%; transition: transform 0.3s;">
+                                            <span class="ml-3">For this innovation, I was honored with a prestigious
+                                                certification
+                                                by the customer I collaborated with.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </main>
         </div>
 
-        <div class="row mt-5">
-            <!-- AI Project -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm">
-                    <img src="../assets/images/fatalities_TO.png" alt="Fatal Traffic Collisions" class="card-img-top">
-                    <div class="card-body">
-                        <h5>AI project</h5>
-                        <p>Develop a probalistic application to predict accidents in Toronto, according to condition and behavior patterns.</p>
-                        <p><strong>Role:</strong> AI Developer</p>
-                        <p><strong>Languages:</strong> Python</p>
-                        <p><strong>Status:</strong> In progress - first step</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tournament Project -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm">
-                    <img src="../assets/images/tournament_web.png" alt="Fatal Traffic Collisions" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Tournament Creation by Time Travellers Team</h5>
-                        <p>The Application is about tournament management, part of a group assignment at Centennial College.</p>
-                        <p><strong>Role:</strong> Backend Developer</p>
-                        <p><strong>Languages:</strong> Angular, ExpressJS, NodeJS, MongoDB, Angular Material, Git</p>
-                        <p><strong>Status:</strong> Complete - <a href="https://tournaments-frontend.onrender.com/" target="_blank">Website</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Personal Portfolio -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm">
-                    <img src="../assets/images/perso.png" alt="Personal Portfolio Web App" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Personal Portfolio (Web App)</h5>
-                        <p>Minimalistic personal portfolio.</p>
-                        <p><strong>Role:</strong> Developer</p>
-                        <p><strong>Languages:</strong> JavaScript, NodeJS, ExpressJS, Express Generator, Bootstrap, Jquery.</p>
-                        <p><strong>Status:</strong> In progress - <a href="https://github.com/Jbaruz/jbaruz" target="_blank">Github repo</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Kiruwear App -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm">
-                    <img src="../assets/images/kiru.png" alt="Kiruwear App" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Kiruwear App (Mobile App)</h5>
-                        <p>Remote wear control app to prevent unplanned downtime for P&H4100XPC cable shovels. This was awarded the 2021 Digital Transformation at Cerro Verde Mine.</p>
-                        <p><strong>Role:</strong> Manager and Creator</p>
-                        <p><strong>Languages:</strong> Flutter, PHP Codeigniter</p>
-                    </div>
-                    <!-- Award Recognition -->
-                    <div class="card-footer bg-light text-center">
-                        <img src="../assets/images/tech_award.jpg" alt="Kiruwear App Award" class="award-img" style="width: 20%; transition: transform 0.3s;">
-                        <span class="ml-3">For this innovation, I received a prestigious Global Technology Award from the company I collaborated with.</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Colombia -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm">
-                    <img src="../assets/images/dragline.png" alt="Dragline bucket" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Assembly Dragline Bucket</h5>
-                        <p>Assembled 115CY Profill Bucket in 20 days.</p>
-                        <p><strong>Role:</strong> Lead Supervisor</p>
-                        <p><strong>Customer:</strong> Drummond mine - Colombia (2014)</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Panama -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm">
-                    <img src="../assets/images/bucket_panama.png" alt="Aquadigger bucket Dredge" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Rebuild for Manufacturer Warranty</h5>
-                        <p>03 Aquadigger Hoe Bucket rebuilt for Aleman Zubieta Dredge - Dredging for the Culebra Cut Expansion Project.</p>
-                        <p><strong>Role:</strong> Lead Supervisor</p>
-                        <p><strong>Customer:</strong> Autoridad del Canal de Panama (2013-2014)</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Peru -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm">
-                    <img src="../assets/images/ant_cable.png" alt="Cable shovel photo" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Six Sigma Project</h5>
-                        <p>Decreased cable shovel downtime from GET issues from 30 hours to 5 hours per month.</p>
-                        <p><strong>Role:</strong> Supervisor</p>
-                        <p><strong>Customer:</strong> Antamina Mine - Peru (2010)</p>
-                    </div>
-                    <div class="card-footer bg-light text-center">
-                        <img src="../assets/images/Antamina_certificated.png" alt="Kiruwear App Award" class="award-img" style="width: 20%; transition: transform 0.3s;">
-                        <span class="ml-3">For this innovation, I was honored with a prestigious certification by the customer I collaborated with.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-</div>
-
-<%-include ('partials/bottom_nav.ejs')%>
-<%-include ('partials/footer.ejs')%>
+        <%-include ('partials/bottom_nav.ejs')%>
+            <%-include ('partials/footer.ejs')%>

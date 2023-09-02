@@ -23,3 +23,6 @@
   object-fit: cover; /* This will ensure that the images cover the set height and width without distortion */
 }
 
+.text-left {
+  text-align: left !important;
+}

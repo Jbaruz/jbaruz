@@ -1,151 +1,85 @@
-<%-include('partials/header.ejs')%>
-    <%-include('partials/main_nav.ejs')%>
-        <!-- Filename: projects.ejs | Author: Juan Arevalo | Date: 02-09-2023 -->
+<%- include('partials/header.ejs')%>
+    <%- include('partials/main_nav.ejs')%>
+        <!-- Filename: projects.ejs | Author: Juan Arevalo | Date: 11-09-2023 -->
         <div class="d-flex justify-content-center bg-light vh-100">
             <main class="container py-5">
+
+                <!-- Introduction section-->
                 <div class="jumbotron bg-gradient-light text-center">
                     <h1 class="display-7">My Projects</h1>
                 </div>
 
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link text-left " data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
-                                    <h4>AI and Web Development Initiatives</h4>
-                                </button>
-                            </h5>
+                <!-- AI and Web Development Initiatives section -->
+                <div class="accordion accordion-flush" id="accordionFlushExample1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne1" aria-expanded="false"
+                                aria-controls="flush-collapseOne1">
+                            <h5>AI and Web Development Initiatives</h5>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            "As part of my learning experience at Centennial College, I developed these projects.
+                            However, the AI project is particularly focused on what can be next to benefit the
+                            community."
                         </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                "As part of my learning experience at Centennial College, I developed these projects.
-                                However, the AI project is particularly focused on what can be next to benefit the
-                                community."
-                            </div>
-                            <div class="row align-items-stretch">
-                                <!-- AI Project -->
-                                <div class="row">
-                                    <div class="col-md-4 mb-4">
-                                        <div class="card shadow-sm h-100">
-                                            <img src="../assets/images/fatalities_TO.png" alt="Fatal Traffic Collisions"
-                                                class="card-img-top img-fluid">
-                                            <div class="card-body">
-                                                <h5>AI project</h5>
-                                                <p>Develop a probalistic application to predict accidents in Toronto,
-                                                    according to condition and behavior patterns.</p>
-                                                <p><strong>Role:</strong> AI Developer</p>
-                                                <p><strong>Languages:</strong> Python</p>
-                                                <p><strong>Status:</strong> In progress - first step</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Tournament Project -->
-                                    <div class="col-md-4 mb-4">
-                                        <div class="card shadow-sm h-100">
-                                            <img src="../assets/images/tournament_web.png"
-                                                alt="Fatal Traffic Collisions" class="card-img-top img-fluid">
-                                            <div class="card-body">
-                                                <h5>Tournament Creation by Time Travellers Team</h5>
-                                                <p>The Application is about tournament management, part of a group
-                                                    assignment at Centennial College.</p>
-                                                <p><strong>Role:</strong> Backend Developer</p>
-                                                <p><strong>Languages:</strong> Angular, ExpressJS, NodeJS, MongoDB,
-                                                    Angular
-                                                    Material, Git</p>
-                                                <p><strong>Status:</strong> Complete - <a
-                                                        href="https://tournaments-frontend.onrender.com/"
-                                                        target="_blank">Website</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Personal Portfolio -->
-                                    <div class="col-md-4 mb-4">
-                                        <div class="card shadow-sm h-100">
-                                            <img src="../assets/images/perso.png" alt="Personal Portfolio Web App"
-                                                class="card-img-top img-fluid">
-                                            <div class="card-body">
-                                                <h5>Personal Portfolio (Web App)</h5>
-                                                <p>Minimalistic personal portfolio.</p>
-                                                <p><strong>Role:</strong> Developer</p>
-                                                <p><strong>Languages:</strong> JavaScript, NodeJS, ExpressJS, Express
-                                                    Generator, Bootstrap, Jquery.</p>
-                                                <p><strong>Status:</strong> In progress - <a
-                                                        href="https://github.com/Jbaruz/jbaruz" target="_blank">Github
-                                                        repo</a></p>
-                                            </div>
+                        <!-- Projects grid -->
+                        <div class="row align-items-stretch">
+                            <!-- AI Project -->
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <img src="../assets/images/fatalities_TO.png" alt="Fatal Traffic Collisions"
+                                            class="card-img-top img-fluid">
+                                        <div class="card-body">
+                                            <h5>AI project</h5>
+                                            <p>Develop a probalistic application to predict accidents in Toronto,
+                                                according to condition and behavior patterns.</p>
+                                            <p><strong>Role:</strong> AI Developer</p>
+                                            <p><strong>Languages:</strong> Python</p>
+                                            <p><strong>Status:</strong> In progress - first step</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link text-left collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    <h4>Pivoting to Technology</h4>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                "Due to the pandemic, I was compelled to create a tool to help our customers maintain
-                                distance
-                                between mechanics and operators. The app was developed to monitor the wear of
-                                ground-engaging tools
-                                during pre-operational inspections by operators. This application won the Digital
-                                Transformation Award at Cerro Verde Mine."
-                            </div>
-                            <div class="row align-items-stretch">
-                                <div class="row">
-                                    <!-- Kiruwear App -->
-                                    <div class="col-md-4 mb-4">
-                                        <div class="card shadow-sm h-100">
-                                            <img src="../assets/images/kiru.png" alt="Kiruwear App"
-                                                class="card-img-top img-fluid">
-                                            <div class="card-body">
-                                                <h5>Kiruwear App (Mobile App)</h5>
-                                                <p>Remote wear control app to prevent unplanned downtime for P&H4100XPC
-                                                    cable shovels.
-                                                    This was awarded the 2021 Digital Transformation at Cerro Verde
-                                                    Mine.
-                                                </p>
-                                                <p><strong>Role:</strong> Creator, Manager, and System Analist</p>
-                                                <p><strong>Languages:</strong> Flutter, PHP Codeigniter</p>
-                                                <p><strong>Status:</strong> Complete - <a href="https://kiru-wear.com/"
-                                                        target="_blank">Website</a></p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <!-- Kiruwear award-->
-                                    <div class="col-md-4 mb-4">
-                                        <div class="card shadow-sm h-100">
-                                            <img src="../assets/images/tech_award.jpg" alt="Kiruwear App Award"
-                                                class="card-img-top img-fluid">
-                                            <div class="card-body">
-                                                <h5>2020 Technology Award</h5>
-                                                <p>For this innovation, I received a prestigious Global
-                                                    Technology Award from the company I collaborated with.
-                                                </p>
-                                            </div>
+                                <!-- Tournament Project -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <img src="../assets/images/tournament_web.png" alt="Fatal Traffic Collisions"
+                                            class="card-img-top img-fluid">
+                                        <div class="card-body">
+                                            <h5>Tournament Creation by Time Travellers Team</h5>
+                                            <p>The Application is about tournament management, part of a group
+                                                assignment at Centennial College.</p>
+                                            <p><strong>Role:</strong> Backend Developer</p>
+                                            <p><strong>Languages:</strong> Angular, ExpressJS, NodeJS, MongoDB,
+                                                Angular
+                                                Material, Git</p>
+                                            <p><strong>Status:</strong> Complete - <a
+                                                    href="https://tournaments-frontend.onrender.com/"
+                                                    target="_blank">Website</a></p>
                                         </div>
                                     </div>
-                                    <!-- Former company recognition-->
-                                    <div class="col-md-4 mb-4">
-                                        <div class="card shadow-sm h-100">
-                                            <img src="../assets/images/recognition.png" alt="Recognition by former company"
-                                                class="card-img-top img-fluid">
-                                            <div class="card-body">
-                                                <p><strong>Objectives</strong> </p>
-                                                <p>. Reduce social distancing during the inspection of the GET</p>
-                                                <p>. Help the customer be more efficient in monitoring the wear of the GETs</p>
-                                                <p>. Learn about the wear of the GETs online through the website https://kiru-wear.com/</p>
-                                            </div>
+                                </div>
+                                <!-- Personal Portfolio -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <img src="../assets/images/perso.png" alt="Personal Portfolio Web App"
+                                            class="card-img-top img-fluid">
+                                        <div class="card-body">
+                                            <h5>Personal Portfolio (Web App)</h5>
+                                            <p>Minimalistic personal portfolio.</p>
+                                            <p><strong>Role:</strong> Developer</p>
+                                            <p><strong>Languages:</strong> JavaScript, NodeJS, ExpressJS, Express
+                                                Generator, Bootstrap, Jquery.</p>
+                                            <p><strong>Status:</strong> In progress - <a
+                                                    href="https://github.com/Jbaruz/jbaruz" target="_blank">Github
+                                                    repo</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -153,17 +87,93 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link text-left collapsed" data-toggle="collapse" data-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
-                                <h4>Innovations in Mining: Wear Abrasion Solutions</h4>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne2" aria-expanded="false"
+                                aria-controls="flush-collapseOne2">
+                                <h5>Pivoting to Technology</h5>
                             </button>
-                        </h5>
                     </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
+
+                    <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            "Due to the pandemic, I was compelled to create a tool to help our customers maintain
+                            distance
+                            between mechanics and operators. The app was developed to monitor the wear of
+                            ground-engaging tools
+                            during pre-operational inspections by operators. This application won the Digital
+                            Transformation Award at Cerro Verde Mine."
+                        </div>
+                        <div class="row align-items-stretch">
+                            <div class="row">
+                                <!-- Kiruwear App -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <img src="../assets/images/kiru.png" alt="Kiruwear App"
+                                            class="card-img-top img-fluid">
+                                        <div class="card-body">
+                                            <h5>Kiruwear App (Mobile App)</h5>
+                                            <p>Remote wear control app to prevent unplanned downtime for P&H4100XPC
+                                                cable shovels.
+                                                This was awarded the 2021 Digital Transformation at Cerro Verde
+                                                Mine.
+                                            </p>
+                                            <p><strong>Role:</strong> Creator, Manager, and System Analist</p>
+                                            <p><strong>Languages:</strong> Flutter, PHP Codeigniter</p>
+                                            <p><strong>Status:</strong> Complete - <a href="https://kiru-wear.com/"
+                                                    target="_blank">Website</a></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Kiruwear award-->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <img src="../assets/images/tech_award.jpg" alt="Kiruwear App Award"
+                                            class="card-img-top img-fluid">
+                                        <div class="card-body">
+                                            <h5>2020 Technology Award</h5>
+                                            <p>For this innovation, I received a prestigious Global
+                                                Technology Award from the company I collaborated with.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Former company recognition-->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <img src="../assets/images/recognition.png" alt="Recognition by former company"
+                                            class="card-img-top img-fluid">
+                                        <div class="card-body">
+                                            <p><strong>Objectives</strong> </p>
+                                            <p>. Reduce social distancing during the inspection of the GET</p>
+                                            <p>. Help the customer be more efficient in monitoring the wear of the GETs
+                                            </p>
+                                            <p>. Learn about the wear of the GETs online through the website
+                                                https://kiru-wear.com/</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample3">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne3" aria-expanded="false"
+                                aria-controls="flush-collapseOne3">
+                                <h5>Innovations in Mining: Wear Abrasion Solutions</h5>
+                            </button>
+                    </div>
+                    <div id="flush-collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
                             "Over the course of eighteen years working as a technical global supporter for the
                             Spanish-speaking
                             Latin America region, I have been involved in numerous projects. Among the most significant
@@ -227,16 +237,11 @@
                         </div>
                     </div>
                 </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+
+                <!---Footer-->
+                <br><br><br><br><br><br><br><br>
             </main>
         </div>
 
-        <%-include ('partials/bottom_nav.ejs')%>
-            <%-include ('partials/footer.ejs')%>
+        <%- include ('partials/bottom_nav.ejs')%>
+            <%- include ('partials/footer.ejs')%>

@@ -1,7 +1,7 @@
 <%-include('partials/header.ejs')%>
     <%-include('partials/main_nav.ejs')%>
 
-        <!-- Filename: link.ejs | Author: Juan Arevalo | Date: 12-09-2023 -->
+        <!-- Filename: link.ejs | Author: Juan Arevalo | Date: 13-09-2023 -->
         <div class="d-flex justify-content-center bg-light vh-100">
             <main class="container mt-5">
                 <h2 class="text-center mb-4">Important Links</h2>
@@ -25,6 +25,10 @@
                         <li class="nav-item">
                             <a class="nav-link" id="category4-tab" data-toggle="tab" href="#category4" role="tab"
                                 aria-controls="category4" aria-selected="false">Big Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="category5-tab" data-toggle="tab" href="#category5" role="tab"
+                                aria-controls="category5" aria-selected="false">AI tools</a>
                         </li>
                         <!-- ... more tabs for more categories ... -->
                     </ul>
@@ -291,7 +295,7 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="card text-center">
                                         <i class="fa-solid fa-magnifying-glass-chart card-img mt-3"
-                                            style="font-size: 3.5em; color: blue ;"></i>
+                                            style="font-size: 3.5em; color: black ;"></i>
                                         <div class="card-body">
                                             <h5 class="card-title">Analyze Spark</h5>
                                             <a href="https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started-analyze-spark" class="btn btn-light" target="_blank"
@@ -303,7 +307,7 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="card text-center">
                                         <i class="fa-solid fa-chart-simple card-img mt-3"
-                                            style="font-size: 3.5em; color: blue ;"></i>
+                                            style="font-size: 3.5em; color: black  ;"></i>
                                         <div class="card-body">
                                             <h5 class="card-title">Analyze data explorer</h5>
                                             <a href="https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started-analyze-data-explorer" class="btn btn-light" target="_blank"
@@ -315,7 +319,7 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="card text-center">
                                         <i class="fa-solid fa-laptop-code card-img mt-3"
-                                            style="font-size: 3.5em; color: blue ;"></i>
+                                            style="font-size: 3.5em; color: black ;"></i>
                                         <div class="card-body">
                                             <h5 class="card-title">Tutorial KQL</h5>
                                             <a href="https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/tutorials/learn-common-operators?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&pivots=azuredataexplorer" class="btn btn-light" target="_blank"
@@ -328,7 +332,47 @@
 
                             </div>
                         </div>
+                        <div class="tab-pane fade" id="category5" role="tabpanel" aria-labelledby="category5-tab">
+                            <div class="row justify-content-center">
 
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <i class="fa-solid fa-atom card-img mt-3"
+                                            style="font-size: 3.5em; color: black ;"></i>
+                                        <div class="card-body">
+                                            <h5 class="card-title">ChatGPT</h5>
+                                            <a href="https://chat.openai.com" class="btn btn-light" target="_blank"
+                                                rel="noopener noreferrer">Visit</a>
+                                        </div>
+                                    </div>
+                                </div>  
+                                
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <i class="fa-solid fa-robot card-img mt-3"
+                                            style="font-size: 3.5em; color: black  ;"></i>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Quillbot</h5>
+                                            <a href="https://quillbot.com/grammar-check" class="btn btn-light" target="_blank"
+                                                rel="noopener noreferrer">Visit</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <i class="fa-regular fa-face-smile-wink card-img mt-3"
+                                            style="font-size: 3.5em; color: black ;"></i>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Monica</h5>
+                                            <a href="https://monica.im" class="btn btn-light" target="_blank"
+                                                rel="noopener noreferrer">Visit</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <br>

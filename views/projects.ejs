@@ -1,6 +1,6 @@
 <%- include('partials/header.ejs')%>
     <%- include('partials/main_nav.ejs')%>
-        <!-- Filename: projects.ejs | Author: Juan Arevalo | Date: 19-05-2024 -->
+        <!-- Filename: projects.ejs | Author: Juan Arevalo | Date: 30-05-2024 -->
         <div class="d-flex justify-content-center bg-light vh-100">
             <main class="container py-5">
 
@@ -9,7 +9,56 @@
                     <h1 class="display-7">Projects</h1>
                 </div>
 
-                <!-- AI and Web Development Initiatives section -->
+                <!-- Postgraduate AI Projects 2024 -->
+                <div class="accordion accordion-flush" id="accordionFlushExample1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne1" aria-expanded="false"
+                                aria-controls="flush-collapseOne1">
+                            <h5>Postgraduate AI Projects 2024</h5>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            "As part of my learning experience at Centennial College, I developed these projects.
+                            However, the AI project is particularly focused on what can be next to benefit the
+                            community."
+                        </div>
+
+                        <!-- Projects grid -->
+                        <div class="row align-items-stretch">
+                            <div class="row">
+                                <!-- Waste Bin Classifiation -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100">
+                                        <img src="../assets/images/waste_bin.png" alt="tumor prediction"
+                                            class="card-img-top img-fluid">
+                                        <div class="card-body">
+                                            <h5>Waste Bin Classification</h5>
+                                            <p>This project, developed during my AI program, utilizes deep learning to classify 
+                                                waste bins as 'full' or 'empty'. It involved capturing images from various angles and times, 
+                                                preprocessing, model training with CNNs, and using WandB for experiment tracking, achieving 
+                                                a validation accuracy of 62.5%.</p>
+                                            
+                                            <p><strong>Role:</strong> AI Developer</p>
+                                            <p><strong>Skills:</strong> Python, TensorFlow, CNN, Keras, PIL,
+                                                 Wandb </p>
+                                            <p><strong>Status:</strong> Complete<a
+                                                href=""
+                                                target="_blank">Github</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects at college: AI and Web Depelopment -->
                 <div class="accordion accordion-flush" id="accordionFlushExample1">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne1">

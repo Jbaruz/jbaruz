@@ -5,7 +5,7 @@ body {
 }
 
 .star-wars-container {
-    height: 300px;
+    height: 220px;
     overflow: hidden;
     perspective: 300px;
     position: relative;

@@ -1,8 +1,4 @@
-Here is a professional and impactful `README.md` for your portfolio based on the information and images you've provided:
-
----
-
-# Welcome to Juan Arevalo's Portfolio 🚀
+# Welcome to Juan Arevalo's GitHub 🚀
 
 **🌍 Location:** Toronto, Ontario, Canada  
 **💼 Current Role:** AI Learner & Expert in Mining Equipment Wear Solutions  

@@ -28,3 +28,27 @@
 .text-left {
   text-align: left !important;
 }
+
+
+/* Styles for animated links on hover */
+.animated-link {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.1rem; /* Adjust size accordingly */
+  text-transform: uppercase;
+  color: #000; /* Initial color */
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.animated-link:hover {
+  color: rgb(255, 0, 238); /* Change color on hover */
+  transform: translate(-15px, -10px) rotateY(50deg) scale(1.5); /* Slight movement */
+}
+
+.animated-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}

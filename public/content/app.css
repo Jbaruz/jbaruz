@@ -1,8 +1,4 @@
-/* Filename: app.css | Author: Juan Arevalo | Date: 02-09-2023 */
-.navbar.fixed-bottom {
-  height: 40px;
-}
-
+/* Filename: app.css | Author: Juan Arevalo | Date: 09-09-2023 */
 .navbar-brand img{
 
   width: 40px;
@@ -52,3 +48,5 @@
   gap: 10px;
   padding: 20px;
 }
+
+

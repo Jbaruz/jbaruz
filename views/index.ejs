@@ -1,7 +1,7 @@
 <%-include('partials/header.ejs')%>
 
-<!-- Filename: index.ejs | Author: Juan Arevalo | Date: 09-09-2024 -->
-<div class="d-flex justify-content-center bg-light vh-100">
+<!-- Filename: index.ejs | Author: Juan Arevalo | Date: 10-09-2024 -->
+<div class="d-flex justify-content-center bg-light">
     <main class="container py-5">
         <div class="jumbotron text-center bg-gradient-light">
             <h1 class="display-4">Embarking on an AI Odyssey!</h1>
@@ -56,15 +56,11 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <%- include ('partials/bottom_nav.ejs')%>
     </main>
 </div>
 
-<%-include ('partials/bottom_nav.ejs')%>
+
 <%-include ('partials/footer.ejs')%>
 <script>
     function getCurrentDate() {

@@ -1,6 +1,5 @@
-/* Filename: app.css | Author: Juan Arevalo | Date: 09-09-2023 */
+/* Filename: app.css | Author: Juan Arevalo | Date: 10-09-2023 */
 .navbar-brand img{
-
   width: 40px;
   height: 40px;
 }
@@ -50,3 +49,39 @@
 }
 
 
+
+html, body {
+  height: 100%; /* Full height for the body */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1; /* Allow main content to grow and push footer down */
+  overflow-y: auto; /* Ensure content can scroll */
+}
+
+
+
+footer.foot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer.foot a:hover {
+  color: #ccc;
+}
+
+footer.foot .fab {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+footer.foot .fab:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+}

@@ -31,7 +31,7 @@
   font-weight: bold;
   font-size: 1.1rem; /* Adjust size accordingly */
   text-transform: uppercase;
-  color: #000; /* Initial color */
+  color: gray; /* Initial color */
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -75,3 +75,43 @@ footer {
   text-align: center;
   width: 100%;
 }
+
+
+/* Default collapsed state (when the accordion is closed) */
+.accordion {
+  background-color: #000; /* Background color for collapsed state */
+  color: #c91111; /* Text color for collapsed state */
+  font-weight: bold; /* Make the text bold */
+  border: 1px solid blue; /* Border around the button */
+  transition: background-color 0.5s, color 0.5s; /* Smooth transition for color change */
+}
+
+/* Expanded state (when the accordion is open) */
+.accordion-button:not(.collapsed) {
+  background-color: #b30048; /* Background color when expanded */
+  color: #fff; /* Text color for expanded state */
+  border-color: #0056b3; /* Border color when expanded */
+}
+
+/* Hover state (when hovering over the button) */
+.accordion-button:hover {
+  background-color: #004080; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+  border-color: #004080; /* Border color on hover */
+}
+
+/* Focus state (when the button is clicked or focused) */
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Blue focus ring */
+  background-color: #000; /* Maintain background color when focused */
+  color: #fff;
+  border-color: #0056b3; /* Keep border consistent */
+}
+
+/* Customize the accordion body (the panel that opens) */
+.accordion-body {
+  background-color: #000; /* Background color for the accordion body */
+  color: #fff; /* Text color for the accordion body */
+  border-top: 1px solid black; /* Optional border between button and content */
+}
+

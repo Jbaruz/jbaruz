@@ -81,7 +81,6 @@ footer {
 .accordion {
   background-color: #000; /* Background color for collapsed state */
   color: #c91111; /* Text color for collapsed state */
-  font-weight: bold; /* Make the text bold */
   border: 1px solid blue; /* Border around the button */
   transition: background-color 0.5s, color 0.5s; /* Smooth transition for color change */
 }

@@ -9,7 +9,7 @@
 }
 
 
-.d-flex.justify-content-center.bg-light {
+.d-flex.justify-content-center.bg-black {
   overflow-y: auto;
 }
 
@@ -51,37 +51,27 @@
 
 
 html, body {
-  height: 100%; /* Full height for the body */
+  height: auto; /* Allow the body to grow beyond 100% if content exceeds viewport */
   margin: 0;
   padding: 0;
+  overflow-y: auto; /* Ensure the page can scroll */
 }
 
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* Ensure body takes at least the full viewport height */
 }
 
 main {
-  flex-grow: 1; /* Allow main content to grow and push footer down */
-  overflow-y: auto; /* Ensure content can scroll */
+  flex-grow: 1; /* Ensure the main content takes up available space */
+  overflow-y: auto; /* Enable scrolling for overflowed content inside the main area */
 }
 
-
-
-footer.foot a {
+footer {
+  background-color: black;
   color: #fff;
-  text-decoration: none;
-}
-
-footer.foot a:hover {
-  color: #ccc;
-}
-
-footer.foot .fab {
-  font-size: 1.5rem;
-  transition: transform 0.2s ease;
-}
-
-footer.foot .fab:hover {
-  transform: scale(1.2); /* Slight zoom on hover */
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
 }

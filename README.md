@@ -42,11 +42,11 @@ Explore some of the key projects I've been working on:
 
 ### **Technical Proficiencies:**
 
-- **Languages:** Python, PL/SQL, MongoDB, HTML, CSS, LaTeX  
-- **Frameworks:** TensorFlow, Keras, Pandas, NumPy  
-- **Tools:** Jupyter Notebook, Anaconda Navigator, GitHub, Docker  
-- **AI Techniques:** Machine Learning, Natural Language Processing, Deep Learning  
-- **Software:** VSCode, Databricks, Android Studio, Oracle SQL Developer
+- **Languages:** Python, PL/SQL,Java, Kotlin, MongoDB, HTML, CSS, LaTeX  
+- **Frameworks:** TensorFlow, Keras, Pandas, NumPy, Haystack, Express.js
+- **Tools:** Jupyter Notebook, Anaconda Navigator, GitHub, Docker, JetBrains ToolBox, Node.js
+- **AI Techniques:** Machine Learning, Natural Language Processing, Deep Learning , Natural Language Processing, Generative AI, RAG.
+- **Software:** Pycharm Pro, Vim, VSCode, Databricks, Android Studio, Oracle SQL Developer, IntelliJ IDEA, Spyder, Google Colab.
 
 ---
 

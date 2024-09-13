@@ -1,4 +1,4 @@
-<!-- Filename: main_nav.ejs | Author: Juan Arevalo | Date: 13-09-2023 -->
+<!-- Filename: main_nav.ejs | Author: Juan Arevalo | Date: 12-09-2024 -->
 
 <nav class="navbar navbar-expand-lg navbar-light vh100 bg-primary">
     <div class="container-fluid">
@@ -15,7 +15,11 @@
                 </li>
 
                 <li class="nav-item  <%= title === 'About' ? 'active' : '' %>">
-                    <a class="nav-link" href="/about"><i class="fa-regular fa-address-card"></i> About </a>
+                    <a class="nav-link" href="/about"><i class="fa-regular fa-address-card"></i> About me</a>
+                </li>
+
+                <li class="nav-item  <%= title === 'Contact' ? 'active' : '' %>">
+                    <a class="nav-link" href="/contact"><i class="fa-regular fa-address-book"></i> Contact </a>
                 </li>
 
                 <li class="nav-item  <%= title === 'Project' ? 'active' : '' %>">
@@ -25,10 +29,6 @@
                 <!-- <li class="nav-item  <%= title === 'Services' ? 'active' : '' %>">
                     <a class="nav-link" href="/services"><i class="fa-solid fa-microchip"></i> Services </a>
                 </li> -->
-
-                <li class="nav-item  <%= title === 'Contact' ? 'active' : '' %>">
-                    <a class="nav-link" href="/contact"><i class="fa-regular fa-address-book"></i> Contact </a>
-                </li>
 
                 <li class="nav-item  <%= title === 'Link' ? 'active' : '' %>">
                     <a class="nav-link" href="/link"><i class="fa-solid fa-link"></i> Link </a>

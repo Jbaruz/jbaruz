@@ -37,7 +37,7 @@
 }
 
 .animated-link:hover {
-  color: rgb(76, 236, 248); /* Change color on hover */
+  color: rgb(234, 77, 187); /* Change color on hover */
   transform: translate(-15px, -10px) rotateY(50deg) scale(1.5); /* Slight movement */
 }
 

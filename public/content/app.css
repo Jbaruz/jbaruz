@@ -1,7 +1,7 @@
-/* Filename: app.css | Author: Juan Arevalo | Date: 10-09-2023 */
+/* Filename: app.css | Author: Juan Arevalo | Date: 17-09-2024 */
 .navbar-brand img{
-  width: 40px;
-  height: 40px;
+  width: 33px;
+  height: 33px;
 }
 
 .award-img:hover {
@@ -37,7 +37,7 @@
 }
 
 .animated-link:hover {
-  color: rgb(255, 0, 238); /* Change color on hover */
+  color: rgb(76, 236, 248); /* Change color on hover */
   transform: translate(-15px, -10px) rotateY(50deg) scale(1.5); /* Slight movement */
 }
 

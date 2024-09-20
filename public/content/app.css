@@ -19,6 +19,22 @@
   object-fit: cover; /* This will ensure that the images cover the set height and width without distortion */
 }
 
+/* Customize the card-body  */
+.card-body {
+  background-color: #b8d9f1; /* Background color for the card-body */
+  color: #0b0bb1; /* Text color for the card-body */
+  border-top: 1px solid black; /* Optional border card-body */
+}
+
+/* Customize the card-body  */
+.card {
+  background-color: #f1b8cf; /* Background color for the card-body */
+}
+
+/* Customize the tab-pane  */
+.tab-pane {
+  background-color: #b8d9f1; /* Background color for the tab-pane*/
+}
 
 .text-left {
   text-align: left !important;
@@ -103,7 +119,7 @@ footer {
 .accordion-button:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Blue focus ring */
   background-color: #000; /* Maintain background color when focused */
-  color: #fff;
+  color: #1c9ceb;
   border-color: #0056b3; /* Keep border consistent */
 }
 
@@ -113,4 +129,5 @@ footer {
   color: #fff; /* Text color for the accordion body */
   border-top: 1px solid black; /* Optional border between button and content */
 }
+
 

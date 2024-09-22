@@ -16,7 +16,7 @@
 
 
 .card-img-top {
-  height: 320px;  /* or whatever height you prefer */
+  height: 200px;  /* or whatever height you prefer */
   object-fit: cover; /* This will ensure that the images cover the set height and width without distortion */
 }
 

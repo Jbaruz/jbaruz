@@ -4,6 +4,7 @@
   height: 33px;
 }
 
+
 .award-img:hover {
   transform: scale(4.7);
 }
@@ -26,15 +27,7 @@
   border-top: 1px solid black; /* Optional border card-body */
 }
 
-/* Customize the card-body  */
-.card {
-  background-color: #f1b8cf; /* Background color for the card-body */
-}
 
-/* Customize the tab-pane  */
-.tab-pane {
-  background-color: #b8d9f1; /* Background color for the tab-pane*/
-}
 
 .text-left {
   text-align: left !important;

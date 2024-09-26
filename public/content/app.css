@@ -1,4 +1,4 @@
-/* Filename: app.css | Author: Juan Arevalo | Date: 25-09-2024 */
+/* Filename: app.css | Author: Juan Arevalo | Date: 26-09-2024 */
 .navbar-brand img{
   width: 33px;
   height: 33px;
@@ -39,7 +39,7 @@
   display: inline-block;
   font-weight: bold;
   font-size: 1.1rem; /* Adjust size accordingly */
-  text-transform: uppercase;s
+  text-transform: uppercase;
   color: rgb(198, 185, 185); /* Initial color */
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;

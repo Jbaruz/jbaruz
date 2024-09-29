@@ -1,7 +1,11 @@
-/* Filename: app.css | Author: Juan Arevalo | Date: 26-09-2024 */
+/* Filename: app.css | Author: Juan Arevalo | Date: 29-09-2024 */
 .navbar-brand img{
   width: 33px;
   height: 33px;
+  padding: 0;
+  object-fit: contain ;
+  background: transparent;
+  border-color: transparent;
 }
 
 
@@ -16,7 +20,7 @@
 
 
 .card-img-top {
-  height: 200px;  /* or whatever height you prefer */
+  height: 225px;  /* or whatever height you prefer */
   object-fit: cover; /* This will ensure that the images cover the set height and width without distortion */
 }
 
@@ -26,8 +30,6 @@
   color: #0b0bb1; /* Text color for the card-body */
   border-top: 1px solid black; /* Optional border card-body */
 }
-
-
 
 .text-left {
   text-align: left !important;

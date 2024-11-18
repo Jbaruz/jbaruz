@@ -11,8 +11,8 @@ router.get('/about', function(req, res, next) {
 router.get('/projects', function(req, res, next) {
   res.render('projects', { title: 'Projects' });
 });
-router.get('/photografy', function(req, res, next) {
-  res.render('photografy', { title: 'Photografy' });
+router.get('/get', function(req, res, next) {
+  res.render('get', { title: 'Get' });
 });
 router.get('/services', function(req, res, next) {
   res.render('services', { title: 'Services' });

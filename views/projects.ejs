@@ -1,292 +1,263 @@
 <%- include('partials/header.ejs')%>
-    <%- include('partials/main_nav.ejs')%>
-        <!-- Filename: projects.ejs | Author: Juan Arevalo | Date: 29-11-2024 -->
-        <div class="d-flex justify-content-center">
-            <main class="container py-5 bg-black">
+<%- include('partials/main_nav.ejs')%>
+<!-- Filename: projects.ejs | Author: Juan Arevalo | Date: 30-11-2024 -->
 
-                <!-- Introduction section-->
-                <div class="jumbotron bg-gradient-light text-center text-light text-opacity-75">
-                    <h1 class="display-7">Juan Arevalo's Projects</h1>
-                </div>
+<div class="d-flex justify-content-center">
+    <main class="container py-5 bg-black text-light">
+        <!-- Introduction Section -->
+        <div class="text-center mb-5">
+            <h1 class="display-5">Juan Arevalo's Tech Projects</h1>
+            <p class="lead text-light text-opacity-75">Explore my technical projects and achievements, ranging from AI innovations to practical solutions for industry challenges.</p>
+        </div>
 
-                <!-- Postgraduate AI Projects 2024 -->
-                <div class="accordion accordion-flush" id="accordionFlushExample4">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne4">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                data-bs-target="#flush-collapseOne4" aria-expanded="false"
-                                aria-controls="flush-collapseOne4">
-                            <h5>Postgraduate AI Projects 2024</h4>
-                            </button>
-                        </h2>
-                    </div>
-
-                    <div id="flush-collapseOne4" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body text-light text-opacity-75">
-                            "I finished my AI program at Centennial College. As part of my learning experience, I will be working on personal projects to keep learning and have been updating my AI knowledge."
-                        </div>
-
-                        <!-- Projects grid -->
-                        <div class="row justify-content-center align-items-stretch">
-                            <div class="row">
-                                <!-- Kotlin Dimensions Project -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card shadow-sm h-100">
-                                        <img src="../assets/images/Kotlin_logo.png" style="width: 218px;" alt="Logo Kotlin project"
-                                            class="card-img-top img-fluid mx-auto">
-                                        <div class="card-body">
-                                            <h6><strong>Kotlin video Project</strong></h6>
-                                            <p>This project is a significant step in my journey as an AI enthusiast focused on image management. I am exploring various approaches to achieve optimal results, 
-                                                including training models and utilizing generative AI with or without cloud services. 
-                                                The goal is to identify the most efficient and effective methods for implementation
-                                                .</p>
-                                            
-                                            <p><strong>Role:</strong> AI Developer</p>
-                                            <p><strong>Skills:</strong> Kotlin, Android Studio </p>
-                                            <p><strong>Status:</strong> 1 Phase - Research (Stand by)</p>
-                                            <div class="progress mt-3" style="height: 20px;">
-                                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                                            </div>
+        <!-- Accordion Section -->
+        <div class="accordion" id="projectsAccordion">
+            <!-- Postgraduate AI Projects 2024 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPostgraduate">
+                    <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#postgraduateProjects" aria-expanded="true" aria-controls="postgraduateProjects">
+                        Postgraduate AI Projects 2024
+                    </button>
+                </h2>
+                <div id="postgraduateProjects" class="accordion-collapse collapse show" aria-labelledby="headingPostgraduate" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <p>I completed my AI program at Centennial College, focusing on advanced AI applications. Below are some of the key projects:</p>
+                        <div class="row g-4">
+                            <!-- Kotlin Dimensions Project -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/Kotlin_logo.png" style="width: 218px;" alt="Logo Kotlin project"
+                                        class="card-img-top img-fluid mx-auto">
+                                    <div class="card-body">
+                                        <h6><strong>Kotlin video Project</strong></h6>
+                                        <p>This project is a significant step in my journey as an AI enthusiast focused on image management. I am exploring various approaches to achieve optimal results, 
+                                            including training models and utilizing generative AI with or without cloud services. 
+                                            The goal is to identify the most efficient and effective methods for implementation
+                                            .</p>
+                                        
+                                        <p><strong>Role:</strong> AI Developer</p>
+                                        <p><strong>Skills:</strong> Kotlin, Android Studio </p>
+                                        <p><strong>Status:</strong> 1 Phase - Research (Stand by)</p>
+                                        <div class="progress mt-3" style="height: 20px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- RAG CHATBOT Project -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card shadow-sm h-100">
-                                        <img src="../assets/images/RAG_logo.png" style="width: 191px;" alt="Logo RAG project"
-                                            class="card-img-top img-fluid mx-auto">
-                                        <div class="card-body">
-                                            <h6><Strong>Retrievel Augmented Generation Project</strong> </h6>
-                                            <p>This project expands my knowledge in AI Generative models, focusing on the development of a RAG or GRAG chatbot using
-                                                 cutting-edge models based on recent research papers. The goal is to explore novel approaches to enhance chatbot 
-                                                 performance through advanced retrieval-augmented techniques.</p>                                            
-                                            <p><strong>Role:</strong> AI Developer Collaborator</p>
-                                            <p><strong>Skills:</strong> Python, PyCharm, OpenAI, NLP, LLM </p>
-                                            <p><strong>Status:</strong> Test - 1st Demo version (working on team)</p>
-                                            <div class="progress mt-4" style="height: 20px;">
-                                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                                            </div>
+                            </div>
+                            <!-- RAG Chatbot -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/RAG_logo.png" style="width: 191px;" alt="Logo RAG project"
+                                        class="card-img-top img-fluid mx-auto">
+                                    <div class="card-body">
+                                        <h6><Strong>Retrievel Augmented Generation Project</strong> </h6>
+                                        <p>Focusing on the development of a RAG chatbot using
+                                             cutting-edge models based on recent research papers. The goal is to explore novel approaches to enhance chatbot 
+                                             performance through advanced retrieval-augmented techniques.</p>                                            
+                                        <p><strong>Role:</strong> AI Developer Collaborator</p>
+                                        <p><strong>Skills:</strong> Python, PyCharm, OpenAI, NLP, LLM </p>
+                                        <p><strong>Status:</strong> Test - 1st Demo version (working on team)</p>
+                                        <div class="progress mt-4" style="height: 20px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Mathpractice 2 version-->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card shadow-sm h-100">
-                                        <img src="../assets/images/mathpractice1.png" alt="Mathpractice screenshot"
-                                            class="card-img-top img-fluid">
-                                        <div class="card-body">
-                                            <h6><strong>Mathpractice (2nd version) </strong></h6>
-                                            <p> Building on the first version, I am enhancing the app with AI to provide personalized feedback based 
-                                                on the child’s performance, aiming to improve their understanding of mathematical concepts.
-                                            </p>
-                                            <p><strong>Role:</strong> Developer</p>
-                                            <p><strong>Skills:</strong> Python, PyQt5, PythonGUIS, LLM.
-                                            </p>
-                                            <p><strong>Status:</strong> Plan development (Stand by)
-                                            </p>
-                                            <div class="progress mt-2" style="height: 20px;">
-                                                <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
-                                            </div>
+                            </div>
+                            <!-- Mathpractice 2 version-->
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/mathpractice1.png" alt="Mathpractice screenshot"
+                                        class="card-img-top img-fluid">
+                                    <div class="card-body">
+                                        <h6><strong>Mathpractice (2nd version) </strong></h6>
+                                        <p> Building on the first version, I am enhancing the app with AI to provide personalized feedback based 
+                                            on the child’s performance, aiming to improve their understanding of mathematical concepts.
+                                        </p>
+                                        <p><strong>Role:</strong> Developer</p>
+                                        <p><strong>Skills:</strong> Python, PyQt5, PythonGUIS, LLM.
+                                        </p>
+                                        <p><strong>Status:</strong> Plan development (Stand by)
+                                        </p>
+                                        <div class="progress mt-2" style="height: 20px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Mathpractice -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card shadow-sm h-100">
-                                        <img src="../assets/images/mathpractice.png" alt="Mathpractice screenshot"
-                                            class="card-img-top img-fluid">
-                                        <div class="card-body">
-                                            <h6><strong>Mathpractice (1st version) </strong></h6>
-                                            <p>A personalized math app I developed for my daughter to improve skills in addition, subtraction, and multiplication of positive and negative integers.
-                                                 The app uses a rule-based system that adapts to the user's weaknesses, generating targeted practice questions based on performance.</p>
-                                            
-                                            <p><strong>Role:</strong> Developer</p>
-                                            <p><strong>Skills:</strong> Python, PyQt5, PythonGUIS.
-                                            </p>
-                                            <p><strong>Status:</strong> Completed
-                                            </p>
-                                        </div>
+                            </div>
+                            <!-- Mathpractice -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/mathpractice.png" alt="Mathpractice screenshot"
+                                        class="card-img-top img-fluid">
+                                    <div class="card-body">
+                                        <h6><strong>Mathpractice (1st version) </strong></h6>
+                                        <p>A personalized math app I developed for my daughter to improve skills in addition, subtraction, and multiplication of positive and negative integers.
+                                                The app uses a rule-based system that adapts to the user's weaknesses.</p>
+                                        
+                                        <p><strong>Role:</strong> Developer</p>
+                                        <p><strong>Skills:</strong> Python, PyQt5, PythonGUIS.
+                                        </p>
+                                        <p><strong>Status:</strong> Completed
+                                        </p>
                                     </div>
                                 </div>
-                                <!-- Waste Bin Classifiation -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card shadow-sm h-100">
-                                        <img src="../assets/images/waste_bin.png" alt="tumor prediction"
-                                            class="card-img-top img-fluid">
-                                        <div class="card-body">
-                                            <h6><strong>Waste Bin Classification</strong></h6>
-                                            <p>This project, developed during my AI program, utilizes deep learning to classify 
-                                                waste bins as 'full' or 'empty'. It involved capturing images from various angles and times, 
-                                                preprocessing, model training with CNNs, and using WandB for experiment tracking, achieving 
-                                                a validation accuracy of 62.5%.</p>
-                                            
-                                            <p><strong>Role:</strong> AI Developer</p>
-                                            <p><strong>Skills:</strong> Python, TensorFlow, CNN, Keras, PIL,
-                                                    Wandb </p>
-                                            <p><strong>Status:</strong> Completed - <a 
-                                                href="https://github.com/Jbaruz/waste_bin_classificcation"
-                                                target="_blank">Github</a></p>
-                                        </div>
+                            </div>
+                            <!-- Waste Bin Classifiation -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/waste_bin.png" alt="tumor prediction"
+                                        class="card-img-top img-fluid">
+                                    <div class="card-body">
+                                        <h6><strong>Waste Bin Classification</strong></h6>
+                                        <p>This project, developed during my AI program, utilizes deep learning to classify 
+                                            waste bins as 'full' or 'empty'. It involved capturing images from various angles and times, 
+                                            preprocessing, model training with CNNs, and using WandB for experiment tracking, achieving 
+                                            a validation accuracy of 62.5%.</p>
+                                        
+                                        <p><strong>Role:</strong> AI Developer</p>
+                                        <p><strong>Skills:</strong> Python, TensorFlow, CNN, Keras, PIL,
+                                                Wandb </p>
+                                        <p><strong>Status:</strong> Completed - <a 
+                                            href="https://github.com/Jbaruz/waste_bin_classificcation"
+                                            target="_blank">Github</a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Projects at college: AI and Web Depelopment -->
-                <div class="accordion accordion-flush" id="accordionFlushExample1">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne1">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne1" aria-expanded="false"
-                                aria-controls="flush-collapseOne1">
-                            <h5>Projects at College</h5>
-                            </button>
-                        </h2>
-                    </div>
+            <!-- Projects at College -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCollegeProjects">
+                    <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collegeProjects" aria-expanded="false" aria-controls="collegeProjects">
+                        Projects at College
+                    </button>
+                </h2>
+                <div id="collegeProjects" class="accordion-collapse collapse" aria-labelledby="headingCollegeProjects" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <p>These projects showcase my hands-on learning experience at Centennial College.</p>
+                        <div class="row g-4">
+                            <!-- Brain tumor detection Project -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/deeplearn.png" alt="tumor prediction"
+                                        class="card-img-top img-fluid">
+                                    <div class="card-body">
+                                        <h6><strong>Brain Tumor Classification and Generation Image</strong></h6>
+                                        <p>The project explores supervised, unsupervised and state-of-the-art 
+                                            deep learning techniques applied to image classification and image
+                                                generation tasks.</p>
+                                        <p><strong>Role:</strong> Backend Developer</p>
+                                        <p><strong>Skills:</strong> Python, Deep Learning, CNN, GAN's, Supervised Learning,
+                                                Unsupervised Learning, RESNET50, </p>
+                                        <p><strong>Status:</strong> Complete: A+ <a
+                                            href="https://github.com/ryaoltech/COMP263_deeplearning_G5_tumorbrain"
+                                            target="_blank">Github</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cloud Machine Learning Project -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/recruiter.png" alt="recuiter screenshot"
+                                        class="card-img-top img-fluid">
+                                    <div class="card-body">
+                                        <h6><strong>Cloud Machine Learning Project - AI recruiter</strong></h6>
+                                        <p>"AI Recruiter" is a serverless app using AWS to streamline candidate 
+                                            evaluation with video analysis and match percentage reports</p>
+                                        <p><strong>Skills:</strong> Python, JavaScript, HTML, CSS, AWS Boto3
+                                            , AWS Chalice, RESTful API, Linux.</p>
+                                            <p><strong>AI services:</strong> AWS Transcribe, AWS Comprehend, AWS Textract.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Chatbot Project -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/chatbot.png" alt="Fatal Traffic Collisions"
+                                        class="card-img-top img-fluid">
+                                    <div class="card-body">
+                                        <h6><strong>Deep learning Chatbot project</strong></h6>
+                                        <p>As part of the Software Development Project II Course, 
+                                            group three developed the backend and frontend of a chatbot
+                                            using deep learning for Centennial College</p>
+                                        <p><strong>Role:</strong> Backend Developer</p>
+                                        <p><strong>Skills:</strong> Python, JavaScript, HTML, CSS, NLP, Word2Vec, Flask.</p>
+                                        <p><strong>Status:</strong> Complete: A+ <a
+                                            href="https://github.com/Jbaruz/Deep_Learning_Chatbot"
+                                            target="_blank">Github</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SL Project -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/fatalities_TO.png" alt="Fatal Traffic Collisions"
+                                        class="card-img-top img-fluid">
+                                    <div class="card-body">
+                                        <h6><strong>Supervised learning project</strong></h6>
+                                        <p>Develop a probalistic application to predict accidents in Toronto,
+                                            according to condition and behavior patterns.</p>
+                                        <p><strong>Role:</strong> AI Developer</p>
+                                        <p><strong>Languages:</strong> Python</p>
+                                        <p><strong>Status:</strong> In progress - first step</p>
 
-                    <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body text-light text-opacity-75">
-                            "As part of my learning experience at Centennial College, I developed these projects.
-                            However, the AI project is particularly focused on what can be next to benefit the
-                            community."
-                        </div>
-
-                        <!-- Projects grid -->
-                        <div class="row justify-content-center align-items-stretch">
-                            <div class="row">
-                                <!-- Brain tumor detection Project -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card shadow-sm h-100">
-                                        <img src="../assets/images/deeplearn.png" alt="tumor prediction"
-                                            class="card-img-top img-fluid">
-                                        <div class="card-body">
-                                            <h6><strong>Brain Tumor Classification and Generation Image</strong></h6>
-                                            <p>The project explores supervised, unsupervised and state-of-the-art 
-                                                deep learning techniques applied to image classification and image
-                                                 generation tasks.</p>
-                                            <p><strong>Role:</strong> Backend Developer</p>
-                                            <p><strong>Skills:</strong> Python, Deep Learning, CNN, GAN's, Supervised Learning,
-                                                 Unsupervised Learning, RESNET50, </p>
-                                            <p><strong>Status:</strong> Complete: A+ <a
-                                                href="https://github.com/ryaoltech/COMP263_deeplearning_G5_tumorbrain"
-                                                target="_blank">Github</a></p>
-                                        </div>
                                     </div>
                                 </div>
-                                <!-- Cloud Machine Learning Project -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card shadow-sm h-100">
-                                        <img src="../assets/images/recruiter.png" alt="recuiter screenshot"
-                                            class="card-img-top img-fluid">
-                                        <div class="card-body">
-                                            <h6><strong>Cloud Machine Learning Project - AI recruiter</strong></h6>
-                                            <p>"AI Recruiter" is a serverless app using AWS to streamline candidate 
-                                                evaluation with video analysis and match percentage reports</p>
-                                            <p><strong>Skills:</strong> Python, JavaScript, HTML, CSS, AWS Boto3
-                                             , AWS Chalice, RESTful API, Linux.</p>
-                                             <p><strong>AI services:</strong> AWS Transcribe, AWS Comprehend, AWS Textract.</p>
-                                        </div>
+                            </div>
+                            <!-- Tournament Project -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/tournament_web.png" alt="Fatal Traffic Collisions"
+                                        class="card-img-top img-fluid">
+                                    <div class="card-body">
+                                        <h6><strong>Tournament Creation by Time Travellers Team</strong></h6>
+                                        <p>The Application is about tournament management, part of a group
+                                            assignment at Centennial College.</p>
+                                        <p><strong>Role:</strong> Backend Developer</p>
+                                        <p><strong>Languages:</strong> Angular, ExpressJS, NodeJS, MongoDB,
+                                            Angular
+                                            Material, Git</p>
+                                        <p><strong>Status:</strong> Complete </p>
                                     </div>
                                 </div>
-                                <!-- Chatbot Project -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card shadow-sm h-100">
-                                        <img src="../assets/images/chatbot.png" alt="Fatal Traffic Collisions"
-                                            class="card-img-top img-fluid">
-                                        <div class="card-body">
-                                            <h6><strong>Deep learning Chatbot project</strong></h6>
-                                            <p>As part of the Software Development Project II Course, 
-                                                group three developed the backend and frontend of a chatbot
-                                                using deep learning for Centennial College</p>
-                                            <p><strong>Role:</strong> Backend Developer</p>
-                                            <p><strong>Skills:</strong> Python, JavaScript, HTML, CSS, NLP, Word2Vec, Flask.</p>
-                                            <p><strong>Status:</strong> Complete: A+ <a
-                                                href="https://github.com/Jbaruz/Deep_Learning_Chatbot"
-                                                target="_blank">Github</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- SL Project -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card shadow-sm h-100">
-                                        <img src="../assets/images/fatalities_TO.png" alt="Fatal Traffic Collisions"
-                                            class="card-img-top img-fluid">
-                                        <div class="card-body">
-                                            <h6><strong>Supervised learning project</strong></h6>
-                                            <p>Develop a probalistic application to predict accidents in Toronto,
-                                                according to condition and behavior patterns.</p>
-                                            <p><strong>Role:</strong> AI Developer</p>
-                                            <p><strong>Languages:</strong> Python</p>
-                                            <p><strong>Status:</strong> In progress - first step</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Tournament Project -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card shadow-sm h-100">
-                                        <img src="../assets/images/tournament_web.png" alt="Fatal Traffic Collisions"
-                                            class="card-img-top img-fluid">
-                                        <div class="card-body">
-                                            <h6><strong>Tournament Creation by Time Travellers Team</strong></h6>
-                                            <p>The Application is about tournament management, part of a group
-                                                assignment at Centennial College.</p>
-                                            <p><strong>Role:</strong> Backend Developer</p>
-                                            <p><strong>Languages:</strong> Angular, ExpressJS, NodeJS, MongoDB,
-                                                Angular
-                                                Material, Git</p>
-                                            <p><strong>Status:</strong> Complete </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Personal Portfolio -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card shadow-sm h-100">
-                                        <img src="../assets/images/perso.png" alt="Personal Portfolio Web App"
-                                            class="card-img-top img-fluid">
-                                        <div class="card-body">
-                                            <h6><strong>Personal Portfolio (Web App)</strong></h6>
-                                            <p>This project is my personal endeavor into frontend development, focusing on creating a website that showcases information,
-                                                 photos, and other content. It serves as a platform for experimenting with new web technologies and design techniques.</p>
-                                            <p><strong>Role:</strong> Developer</p>
-                                            <p><strong>Languages:</strong> JavaScript, NodeJS, ExpressJS, Express
-                                                Generator, Bootstrap, Jquery, CSS.</p>
-                                            <p><strong>Status:</strong> In progress continuosly - <a
-                                                    href="https://github.com/Jbaruz/jbaruz" target="_blank">Github
-                                                    repo</a></p>
-                                        </div>
+                            </div>
+                            <!-- Personal Portfolio -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/perso.png" alt="Personal Portfolio Web App"
+                                        class="card-img-top img-fluid">
+                                    <div class="card-body">
+                                        <h6><strong>Personal Portfolio (Web App)</strong></h6>
+                                        <p>This project is my personal endeavor into frontend development, focusing on creating a website that showcases information,
+                                                photos, and other content. It serves as a platform for experimenting with new web technologies and design techniques.</p>
+                                        <p><strong>Role:</strong> Developer</p>
+                                        <p><strong>Languages:</strong> JavaScript, NodeJS, ExpressJS, Express
+                                            Generator, Bootstrap, Jquery, CSS.</p>
+                                        <p><strong>Status:</strong> In progress continuosly - <a
+                                                href="https://github.com/Jbaruz/jbaruz" target="_blank">Github
+                                                repo</a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Pivoting to Technology -->
-                <div class="accordion accordion-flush" id="accordionFlushExample2">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne2">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne2" aria-expanded="false"
-                                aria-controls="flush-collapseOne2">
-                                <h5>Pivoting to Technology</h5>
-                            </button>
-                    </div>
-
-                    <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionFlushExample">
-
-                    <div class="accordion-body text-light text-opacity-75">
-                        "Due to the pandemic, I was compelled to create a tool to help our customers maintain
-                        distance between mechanics and operators. The app was developed to monitor the wear of
-                        heavy equipment components during pre-operational inspections by operators. This application won a Digital Transformation Award in 2021."
-                    </div>
-                    <div class="row justify-content-center align-items-stretch">
-                        <div class="row">
+            <!-- Pivoting to Technology -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPivotTechnology">
+                    <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pivotTechnology" aria-expanded="false" aria-controls="pivotTechnology">
+                        Pivoting to Technology
+                    </button>
+                </h2>
+                <div id="pivotTechnology" class="accordion-collapse collapse" aria-labelledby="headingPivotTechnology" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <p>During the pandemic, I designed a mobile app for remote monitoring of heavy equipment components, reducing interactions and increasing efficiency. This innovation won a Technology Award in 2021.</p>
+                        <div class="row g-4">
                             <!-- Kiruwear App -->
                             <div class="col-md-4 mb-4">
                                 <div class="card shadow-sm h-100">
@@ -316,6 +287,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Company Objectives -->
                             <div class="col-md-4 mb-4">
                                 <div class="card shadow-sm h-100">
@@ -330,18 +302,13 @@
                                     </div>
                                 </div>
                             </div>
+                             
                         </div>
                     </div>
-                    </div>
-
                 </div>
-
-
-                <!---Footer-->
-                <%- include ('partials/bottom_nav.ejs')%>
-            </main>
-
+            </div>
         </div>
+    </main>
+</div>
 
-        
-            <%- include ('partials/footer.ejs')%>
+<%- include('partials/footer.ejs')%>

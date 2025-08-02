@@ -1,0 +1,374 @@
+<%- include('partials/header.ejs') %>
+
+<!-- Filename: index1.ejs | Author: Juan Arevalo | Date: 02‑08‑2025 -->
+<!--
+  This is an improved version of the home page (index.ejs) for jbaruz.dev.
+  It follows professional web‑design practices such as a clear hero section
+  with a compelling headline, supporting text and a focused layout【865161962412891†L20-L63】.  The
+  navigation is easily accessible, and content is organised into
+  digestible sections to improve readability and usability【595960744873444†L86-L98】.  You can
+  test this page by mounting the route defined in index1.js.  Once you’re
+  happy with the result, replace index.ejs and its router with
+  this new version.
+-->
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Juan&nbsp;Arevalo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME / HERO SECTION -->
+<header id="home" class="vh-100 d-flex flex-column justify-content-center align-items-center text-center text-light" style="background: linear-gradient(135deg, #0d1b2a, #1b263b 60%, #415a77);">
+  <div class="container">
+    <h1 class="display-3 fw-bold">Hi, I'm&nbsp;Juan Arevalo</h1>
+    <p class="lead mb-4">Metallurgical Engineer &nbsp;|&nbsp; GET Solutions Specialist &nbsp;|&nbsp; AI Explorer</p>
+    <a href="#about" class="btn btn-primary btn-lg">Learn more</a>
+  </div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-5 bg-black text-light">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <h2 class="fw-bold mb-4">About Me</h2>
+        <p>
+          I'm a Metallurgical Engineer specialising in Ground Engaging Tools and welding wear parts. As a seasoned wear
+          specialist in open‑pit mining, I've dedicated my career to enhancing the performance and durability of ground‑engaging tools.
+          My experience includes providing technical support, resolving complex issues and implementing solutions that optimise mining operations.
+        </p>
+        <p>
+          Recently, I've begun exploring how emerging technologies, including AI, can further augment my problem‑solving abilities and enable me to
+          work more efficiently with customers. My goal is to continue delivering effective solutions, optimising maintenance strategies and extending
+          equipment life by blending proven engineering practices with new technological insights.
+        </p>
+      </div>
+      <div class="col-lg-5 text-center">
+        <img src="/assets/images/logo1.png" alt="Logo" class="img-fluid mb-4" style="max-width:60%;">
+        <!-- Statistics counters -->
+        <div class="row text-center">
+          <div class="col-4">
+            <h3 class="fw-bold">15+</h3>
+            <p class="small">Years experience</p>
+          </div>
+          <div class="col-4">
+            <h3 class="fw-bold">50+</h3>
+            <p class="small">GET Projects</p>
+          </div>
+          <div class="col-4">
+            <h3 class="fw-bold">20+</h3>
+            <p class="small">Tech Projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="py-5 bg-dark text-light">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-center">Featured Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card bg-secondary text-light h-100">
+          <div class="card-body">
+            <h3 class="card-title">GET Projects</h3>
+            <p class="card-text">Discover my projects related to Ground Engaging Tools. Explore how I've improved tool performance and durability in the mining sector.</p>
+            <a href="/get" class="stretched-link text-decoration-none text-warning">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card bg-secondary text-light h-100">
+          <div class="card-body">
+            <h3 class="card-title">Tech Projects</h3>
+            <p class="card-text">Browse my technology projects, including AI applications, software tools and experiments that blend engineering with emerging tech.</p>
+            <a href="/projects" class="stretched-link text-decoration-none text-warning">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-5 bg-black text-light">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-center">Get In Touch</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p class="mb-4 text-center">
+          I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. Feel free to
+          reach out and I'll get back to you soon.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="mailto:email@example.com" class="btn btn-primary">Email Me</a>
+          <a href="/contact" class="btn btn-outline-light">Contact Form</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPORTANT LINKS SECTION -->
+<section id="links" class="py-5 bg-dark text-light">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-center">Important Links</h2>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs justify-content-center" id="linkTabs" role="tablist">
+      <li class="nav-item"><a class="nav-link active" id="lc-tab" data-bs-toggle="tab" href="#learningCenter" role="tab" aria-controls="learningCenter" aria-selected="true">Learning&nbsp;Center</a></li>
+      <li class="nav-item"><a class="nav-link" id="tools-tab" data-bs-toggle="tab" href="#tools" role="tab" aria-controls="tools" aria-selected="false">Tools</a></li>
+      <li class="nav-item"><a class="nav-link" id="ml-tab" data-bs-toggle="tab" href="#machineLearning" role="tab" aria-controls="machineLearning" aria-selected="false">Machine&nbsp;Learning</a></li>
+      <li class="nav-item"><a class="nav-link" id="ai-tab" data-bs-toggle="tab" href="#aiTools" role="tab" aria-controls="aiTools" aria-selected="false">AI&nbsp;Tools</a></li>
+    </ul>
+    <!-- Tab content -->
+    <div class="tab-content mt-3" id="linkTabContent">
+      <!-- Learning Center -->
+      <div class="tab-pane fade show active" id="learningCenter" role="tabpanel" aria-labelledby="lc-tab">
+        <div class="row justify-content-center">
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-brands fa-python card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Python</h6>
+                <a href="https://www.python.org/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-brands fa-java card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Java</h6>
+                <a href="https://dev.java/learn/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-solid fa-k card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Kotlin</h6>
+                <a href="https://kotlinlang.org/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-brands fa-react card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
+              <div class="card-body">
+                <h6 class="card-title">React</h6>
+                <a href="https://react.dev/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tools -->
+      <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="tools-tab">
+        <div class="row justify-content-center">
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-solid fa-tent card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Craft</h6>
+                <a href="https://www.craft.do/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-brands fa-jira card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Jira</h6>
+                <a href="https://www.atlassian.com/software/jira" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-solid fa-envelope-open card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Milanote</h6>
+                <a href="https://milanote.com/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-brands fa-bootstrap card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Bootstrap</h6>
+                <a href="https://getbootstrap.com/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Machine Learning -->
+      <div class="tab-pane fade" id="machineLearning" role="tabpanel" aria-labelledby="ml-tab">
+        <div class="row justify-content-center">
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fas fa-table card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Pandas</h6>
+                <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-solid fa-n card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
+              <div class="card-body">
+                <h6 class="card-title">NumPy</h6>
+                <a href="https://numpy.org/doc/stable/index.html" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fas fa-robot card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Scikit‑learn</h6>
+                <a href="https://scikit-learn.org/stable/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fas fa-laptop-code card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Deep Learning</h6>
+                <a href="https://www.deeplearningbook.org" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- AI Tools -->
+      <div class="tab-pane fade" id="aiTools" role="tabpanel" aria-labelledby="ai-tab">
+        <div class="row justify-content-center">
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-brands fa-square-google-plus card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Google AI Studio</h6>
+                <a href="https://aistudio.google.com/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-solid fa-flask card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Google Labs</h6>
+                <a href="https://labs.google" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-solid fa-star-of-life card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
+              <div class="card-body">
+                <h6 class="card-title">Claude AI</h6>
+                <a href="https://claude.ai/new" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card text-center h-100">
+              <i class="fa-solid fa-atom card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
+              <div class="card-body">
+                <h6 class="card-title">ChatGPT</h6>
+                <a href="https://chat.openai.com" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="/link" class="btn btn-outline-light">Explore All Links</a>
+    </div>
+  </div>
+</section>
+
+<!-- ADDITIONAL PROJECTS PREVIEW SECTION -->
+<section id="more-projects" class="py-5 bg-black text-light">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-center">Featured AI &amp; Tech Projects</h2>
+    <div class="row g-4">
+      <!-- Kotlin Video Project -->
+      <div class="col-md-4">
+        <div class="card bg-secondary text-light h-100">
+          <img src="../assets/images/Kotlin_logo.png" alt="Kotlin project logo" class="card-img-top img-fluid p-3" style="height:180px; object-fit:contain;">
+          <div class="card-body">
+            <h5 class="card-title">Kotlin Video Project</h5>
+            <p class="card-text small">A research‑phase project exploring image management using generative AI and traditional models to achieve optimal results.</p>
+            <a href="/projects" class="stretched-link text-decoration-none text-warning">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <!-- RAG Chatbot Project -->
+      <div class="col-md-4">
+        <div class="card bg-secondary text-light h-100">
+          <img src="../assets/images/RAG_logo.png" alt="RAG project logo" class="card-img-top img-fluid p-3" style="height:180px; object-fit:contain;">
+          <div class="card-body">
+            <h5 class="card-title">Retrieval Augmented Generation Chatbot</h5>
+            <p class="card-text small">Developing a cutting‑edge chatbot based on retrieval‑augmented techniques and recent research papers.</p>
+            <a href="/projects" class="stretched-link text-decoration-none text-warning">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <!-- Math Practice Project -->
+      <div class="col-md-4">
+        <div class="card bg-secondary text-light h-100">
+          <img src="../assets/images/mathpractice1.png" alt="Mathpractice project screenshot" class="card-img-top img-fluid p-3" style="height:180px; object-fit:contain;">
+          <div class="card-body">
+            <h5 class="card-title">Math Practice (2nd&nbsp;Version)</h5>
+            <p class="card-text small">Enhancing the original math app with AI to provide personalised feedback and improve learning outcomes.</p>
+            <a href="/projects" class="stretched-link text-decoration-none text-warning">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="/projects" class="btn btn-outline-light">Explore All Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER & SCRIPTS -->
+<section class="bg-dark text-light py-4">
+  <%- include('partials/bottom_nav.ejs') %>
+</section>
+
+<%- include('partials/footer.ejs') %>
+
+<script>
+  // Add smooth scrolling for internal navigation links
+  document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
+      }
+    });
+  });
+</script>

@@ -14,6 +14,7 @@
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -67,36 +68,6 @@
     </div>
   </div>
 </section>
-
-<!-- PROJECTS SECTION -->
-<section id="projects" class="py-5 bg-dark text-light">
-  <div class="container">
-    <h2 class="fw-bold mb-4 text-center">Featured Projects</h2>
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card bg-secondary text-light h-100">
-          <div class="card-body">
-            <h3 class="card-title">GET Projects</h3>
-            <p class="card-text">Discover my projects related to Ground Engaging Tools. Explore how I've improved tool performance and durability in the mining sector.</p>
-            <a href="/get" class="stretched-link text-decoration-none text-warning">Explore</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card bg-secondary text-light h-100">
-          <div class="card-body">
-            <h3 class="card-title">Tech Projects</h3>
-            <p class="card-text">Browse my technology projects, including AI applications, software tools and experiments that blend engineering with emerging tech.</p>
-            <a href="/projects" class="stretched-link text-decoration-none text-warning">Explore</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
 
 <!-- IMPORTANT LINKS SECTION -->
 <section id="links" class="py-5 bg-dark text-light">
@@ -282,44 +253,61 @@
   </div>
 </section>
 
-<!-- ADDITIONAL PROJECTS PREVIEW SECTION -->
-<section id="more-projects" class="py-5 bg-black text-light">
+<!-- PROJECTS SLIDER -->
+<section id="projects" class="py-5 bg-black text-light">
   <div class="container">
     <h2 class="fw-bold mb-4 text-center">Featured AI &amp; Tech Projects</h2>
-    <div class="row g-4">
-      <!-- Kotlin Video Project -->
-      <div class="col-md-4">
-        <div class="card bg-secondary text-light h-100">
-          <img src="../assets/images/Kotlin_logo.png" alt="Kotlin project logo" class="card-img-top img-fluid p-3" style="height:180px; object-fit:contain;">
-          <div class="card-body">
-            <h5 class="card-title">Kotlin Video Project</h5>
-            <p class="card-text small">A research‑phase project exploring image management using generative AI and traditional models to achieve optimal results.</p>
-            <a href="/projects" class="stretched-link text-decoration-none text-warning">Learn more</a>
+    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1: Kotlin Video Project -->
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <img src="../assets/images/Kotlin_logo.png" alt="Kotlin project" class="img-fluid d-block mx-auto" style="max-height:300px; object-fit:contain;">
+            </div>
+            <div class="col-md-6">
+              <h3 class="fw-bold">Kotlin Video Project</h3>
+              <p>A research‑phase project exploring image management using generative AI and traditional models to achieve optimal results.</p>
+              <a href="/projects" class="btn btn-primary">View <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2: RAG Chatbot -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <img src="../assets/images/RAG_logo.png" alt="RAG chatbot" class="img-fluid d-block mx-auto" style="max-height:300px; object-fit:contain;">
+            </div>
+            <div class="col-md-6">
+              <h3 class="fw-bold">RAG Chatbot</h3>
+              <p>Developing a cutting‑edge chatbot based on retrieval‑augmented techniques and recent research papers.</p>
+              <a href="/projects" class="btn btn-primary">View <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3: Math Practice -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <img src="../assets/images/mathpractice1.png" alt="Math Practice" class="img-fluid d-block mx-auto" style="max-height:300px; object-fit:contain;">
+            </div>
+            <div class="col-md-6">
+              <h3 class="fw-bold">Math Practice (2nd Version)</h3>
+              <p>Enhancing the original math app with AI to provide personalised feedback and improve learning outcomes.</p>
+              <a href="/projects" class="btn btn-primary">View <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
           </div>
         </div>
       </div>
-      <!-- RAG Chatbot Project -->
-      <div class="col-md-4">
-        <div class="card bg-secondary text-light h-100">
-          <img src="../assets/images/RAG_logo.png" alt="RAG project logo" class="card-img-top img-fluid p-3" style="height:180px; object-fit:contain;">
-          <div class="card-body">
-            <h5 class="card-title">Retrieval Augmented Generation Chatbot</h5>
-            <p class="card-text small">Developing a cutting‑edge chatbot based on retrieval‑augmented techniques and recent research papers.</p>
-            <a href="/projects" class="stretched-link text-decoration-none text-warning">Learn more</a>
-          </div>
-        </div>
-      </div>
-      <!-- Math Practice Project -->
-      <div class="col-md-4">
-        <div class="card bg-secondary text-light h-100">
-          <img src="../assets/images/mathpractice1.png" alt="Mathpractice project screenshot" class="card-img-top img-fluid p-3" style="height:180px; object-fit:contain;">
-          <div class="card-body">
-            <h5 class="card-title">Math Practice (2nd&nbsp;Version)</h5>
-            <p class="card-text small">Enhancing the original math app with AI to provide personalised feedback and improve learning outcomes.</p>
-            <a href="/projects" class="stretched-link text-decoration-none text-warning">Learn more</a>
-          </div>
-        </div>
-      </div>
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <div class="text-center mt-4">
       <a href="/projects" class="btn btn-outline-light">Explore All Projects</a>

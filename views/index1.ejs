@@ -1,6 +1,16 @@
 <%- include('partials/header.ejs') %>
 
 <!-- Filename: index1.ejs | Author: Juan Arevalo | Date: 02‑08‑2025 -->
+<!--
+  This is an improved version of the home page (index.ejs) for jbaruz.dev.
+  It follows professional web‑design practices such as a clear hero section
+  with a compelling headline, supporting text and a focused layout【865161962412891†L20-L63】.  The
+  navigation is easily accessible, and content is organised into
+  digestible sections to improve readability and usability【595960744873444†L86-L98】.  You can
+  test this page by mounting the route defined in index1.js.  Once you’re
+  happy with the result, replace index.ejs and its router with
+  this new version.
+-->
 
 <!-- NAVIGATION BAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -14,7 +24,6 @@
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -22,11 +31,50 @@
 </nav>
 
 <!-- HOME / HERO SECTION -->
-<header id="home" class="vh-100 d-flex flex-column justify-content-center align-items-center text-center text-light" style="background: linear-gradient(135deg, #0d1b2a, #1b263b 60%, #415a77);">
+<!--
+  The hero section has been redesigned to mirror modern portfolio layouts (like the example provided).
+  It features vertical social icons on the left, a friendly introduction with emojis and a CTA button in
+  the centre, and a stylish organic shape behind the portrait on the right.  A light background
+  contrasts with the dark sections that follow.
+-->
+<header id="home" class="vh-100 d-flex align-items-center text-light" style="background: linear-gradient(135deg, #0d1b2a, #1b263b 60%, #415a77);">
   <div class="container">
-    <h1 class="display-3 fw-bold">Hi, I'm&nbsp;Juan Arevalo</h1>
-    <p class="lead mb-4">Metallurgical Engineer &nbsp;|&nbsp; GET Solutions Specialist &nbsp;|&nbsp; AI Explorer</p>
-    <a href="#about" class="btn btn-primary btn-lg">Learn more</a>
+    <div class="row align-items-center">
+      <!-- Social icons (left column) -->
+      <div class="col-md-1 d-none d-md-flex flex-column align-items-center gap-4">
+        <a href="https://www.linkedin.com/in/jbaruz" class="text-decoration-none" target="_blank">
+          <i class="fab fa-linkedin fa-2x" style="color:#7367f0;"></i>
+        </a>
+        <a href="https://github.com/Jbaruz" class="text-decoration-none" target="_blank">
+          <i class="fab fa-github fa-2x" style="color:#7367f0;"></i>
+        </a>
+        <a href="https://twitter.com/Jbaruz11" class="text-decoration-none" target="_blank">
+          <i class="fab fa-twitter fa-2x" style="color:#7367f0;"></i>
+        </a>
+      </div>
+      <!-- Intro text column -->
+      <div class="col-md-6 text-center text-md-start">
+        <h1 class="display-3 fw-bold mb-3">Hi, I'm&nbsp;Juan Arevalo</h1>
+        <!-- Interest icons using emoji -->
+        <p class="mb-3 fs-4">
+          <span class="me-2">💻</span><span class="me-2">🎸</span><span class="me-2">☕️</span><span class="me-2">🧠</span><span class="me-2">❤️</span>
+        </p>
+        <p class="lead mb-4">Metallurgical Engineer &nbsp;|&nbsp; GET Solutions Specialist &nbsp;|&nbsp; AI Explorer</p>
+        <a href="#contact" class="btn btn-primary btn-lg">
+          Contact
+          <i class="fas fa-paper-plane ms-2"></i>
+        </a>
+      </div>
+      <!-- Portrait image with decorative shape -->
+      <div class="col-md-5 text-center mt-5 mt-md-0">
+        <div class="position-relative d-inline-block" style="width:320px; height:320px;">
+          <!-- Purple organic shape -->
+          <div style="width:320px; height:320px; background-color:#7367f0; border-radius:60% 40% 60% 40% / 40% 60% 40% 60%;"></div>
+          <!-- User photo overlay -->
+          <img src="/assets/images/juan.png" alt="Juan Arevalo" style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); width:260px; height:260px; object-fit:cover; border-radius:50%;">
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -37,15 +85,15 @@
       <div class="col-lg-7">
         <h2 class="fw-bold mb-4">About Me</h2>
         <p>
-          I'm a Metallurgical Engineer specialising in Ground Engaging Tools and welding wear parts. As a seasoned wear
-          specialist in open‑pit mining, I've dedicated my career to enhancing the performance and durability of ground‑engaging tools.
-          My experience includes providing technical support, resolving complex issues and implementing solutions that optimise mining operations.
+          I’m a <strong>Metallurgical Engineer</strong> focused on <strong>Ground Engaging Tools (GET)</strong> and wear solutions for open-pit mining. Over <strong>15+ years</strong> I’ve led field trials, failure analysis, and welding/wear programs that extended component life, reduced change-outs, and improved safety. Results include <strong>10–30% longer wear life</strong>, fewer unplanned stops, and lower total GET cost for haul fleets, shovels, and loaders.
         </p>
         <p>
-          Recently, I've begun exploring how emerging technologies, including AI, can further augment my problem‑solving abilities and enable me to
-          work more efficiently with customers. My goal is to continue delivering effective solutions, optimising maintenance strategies and extending
-          equipment life by blending proven engineering practices with new technological insights.
+          I work hands-on with maintenance, operations, and OEM/aftermarket partners—defining KPIs, running RCFA, and standardizing best practices across sites. In 2024 I completed the <strong>Software Engineering Technology – Artificial Intelligence (Fast-Track), Ontario College Advanced Diploma (with Honours), Centennial College</strong>, and now apply <strong>computer vision</strong> and <strong>predictive models</strong> to wear monitoring and maintenance planning. My goal: <strong>optimize uptime and unit cost</strong> by combining proven engineering with data-driven tools.
         </p>
+
+
+        <p class="mb-0"><em>Strengths:</em> GET design & selection, wear mapping, RCFA, reliability & maintenance, vendor collaboration, site training, safety leadership, AI for condition monitoring.</p>
+
       </div>
       <div class="col-lg-5 text-center">
         <img src="/assets/images/logo1.png" alt="Logo" class="img-fluid mb-4" style="max-width:60%;">
@@ -53,16 +101,64 @@
         <div class="row text-center">
           <div class="col-4">
             <h3 class="fw-bold">15+</h3>
-            <p class="small">Years experience</p>
+            <p class="small">Years of experience</p>
           </div>
           <div class="col-4">
             <h3 class="fw-bold">50+</h3>
-            <p class="small">GET Projects</p>
+            <p class="small">GET Projects delivered</p>
           </div>
           <div class="col-4">
             <h3 class="fw-bold">20+</h3>
-            <p class="small">Tech Projects</p>
+            <p class="small">Tech Projects & Prototypes</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="py-5 bg-dark text-light">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-center">Featured Projects</h2>
+    <div class="row g-4">
+      <!-- GET Projects Card -->
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm" style="background-color:#1b293b; border-radius:0.75rem;">
+          <div class="card-body">
+            <h3 class="card-title text-primary">GET Projects</h3>
+            <p class="card-text text-light opacity-75">Discover my projects related to Ground Engaging Tools. Explore how I have improved tool performance and durability in the mining sector.</p>
+            <a href="/get" class="btn btn-outline-primary mt-2">Explore <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Tech Projects Card -->
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm" style="background-color:#1b293b; border-radius:0.75rem;">
+          <div class="card-body">
+            <h3 class="card-title text-primary">Tech Projects</h3>
+            <p class="card-text text-light opacity-75">Browse my technology projects, including AI applications, software tools and experiments that blend engineering with emerging tech.</p>
+            <a href="/projects" class="btn btn-outline-primary mt-2">Explore <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-5 bg-black text-light">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-center">Get In Touch</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p class="mb-4 text-center">
+          I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. Feel free to
+          reach out and I'll get back to you soon.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="mailto:email@example.com" class="btn btn-primary">Email Me</a>
+          <a href="/contact" class="btn btn-outline-light">Contact Form</a>
         </div>
       </div>
     </div>
@@ -253,8 +349,8 @@
   </div>
 </section>
 
-<!-- PROJECTS SLIDER -->
-<section id="projects" class="py-5 bg-black text-light">
+<!-- FEATURED AI & TECH PROJECTS SLIDER -->
+<section id="more-projects" class="py-5 bg-black text-light">
   <div class="container">
     <h2 class="fw-bold mb-4 text-center">Featured AI &amp; Tech Projects</h2>
     <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -312,107 +408,6 @@
     <div class="text-center mt-4">
       <a href="/projects" class="btn btn-outline-light">Explore All Projects</a>
     </div>
-  </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section id="contact" class="py-5 bg-black text-light">
-  <div class="container">
-    <h2 class="fw-bold mb-4 text-center">Get In Touch</h2>
-            <main class="container py-4 float-sm-start">
-                <div class="jumbotron text-center text-light text-opacity-75">
-                    <h1 class="display-7">Welcome to the <%=title%> page</h1>
-                </div>
-                <div class="d-flex flex-sm-row flex-column py-5 text-light">
-                    <div class="p-2 flex-fill">
-                        <div class="card-body text-center bg-black">
-                            <img src="../assets/images/juan.png" alt="Juan" class="rounded-circle img-fluid" style="width: 150px;">
-                            <h5 class="my-3">Juan Arevalo</h5>
-                            <p class=" text-secondary mb-1">Expert in Mining Equipment Wear Solutions with AI knowledge</p>
-                            <a href="/" class="text-secondary mb-3" style="display: block;" target="_blank">jbaruz.dev</a>
-                            <p class="text-secondary mb-4">Etobicoke Area, Toronto, Ontario, CA</p>
-                        </div>
-                </div>
-                <div class="p-2 flex-fill">
-                    <section style="background-color: black;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="card-body p-0 bg-black">
-                                        <ul class="list-group list-group-flush rounded-3">
-                                            <li
-                                            class="list-group-item d-flex justify-content-evenly align-items-center p-3 bg-black">
-                                            <i class="fab fa-github fa-lg" style="color: #686060;"></i>
-                                            <p class="mb-0 text-secondary fw-bold">Jbaruz</p>
-                                            </li>
-                                            <li
-                                                class="list-group-item d-flex justify-content-evenly align-items-center p-3 bg-black">
-                                                <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
-                                                <p class="mb-0 text-secondary fw-bold">@Jbaruz11</p>
-                                            </li>
-                                            <li
-                                                class="list-group-item d-flex justify-content-evenly align-items-center p-3 bg-black">
-                                                <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
-                                                <p class="mb-0 text-secondary fw-bold">jbaruz1</p>
-                                            </li>
-                                            <li
-                                                class="list-group-item d-flex justify-content-evenly align-items-center p-3 bg-black">
-                                                <i class="fab fa-linkedin fa-lg" style="color: #3b5998;"></i>
-                                                <p class="mb-0 text-secondary fw-bold">jbaruz</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="card mb-4 bg-primary">
-                                        <div class="card-body text-light text-opacity-50 bg-primary">
-                                            <div class="row">
-                                                <div class="col-sm-3">
-                                                    <p class="mb-0">Full Name</p>
-                                                </div>
-                                                <div class="col-sm-9">
-                                                    <p class="mb-0 text-light">Juan Bibiano Arevalo Ruiz</p>
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <div class="row">
-                                                <div class="col-sm-3">
-                                                    <p class="mb-0">Email</p>
-                                                </div>
-                                                <div class="col-sm-9">
-                                                    <p class="mb-0 text-light">jbaruz@gmail.com</p>
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <div class="row">
-                                                <div class="col-sm-3">
-                                                    <p class="mb-0">Mobile</p>
-                                                </div>
-                                                <meta name="format-detection" content="telephone=no">
-                                                <div class="col-sm-9">
-                                                    <p class="mb-0 text-light"><span>(01) 437-557-6885</span></p>
-                                                </div>                                               
-                                            </div>
-                                            <hr>
-                                            <div class="row">
-                                                <div class="col-sm-3">
-                                                    <p class="mb-0">Address</p>
-                                                </div>
-                                                <div class="col-sm-9">
-                                                    <p class="mb-0 text-light">Etobicoke Area, Toronto, Ontario, CA</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                    </section>
-                </div>
-
-            </div>
-        </main>
   </div>
 </section>
 

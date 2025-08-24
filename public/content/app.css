@@ -126,3 +126,37 @@ footer {
 }
 
 
+/* ===== Featured Projects (index1.ejs -> #projects) overrides ===== */
+#projects .card {
+  background: #121417 !important;       /* dark, cohesive */
+  border: 0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+}
+
+#projects .card-body {
+  background: transparent !important;    /* cancel the global blue */
+  color: #e8f0ff !important;             /* readable on dark */
+  border-top: 0 !important;
+}
+
+#projects .card-title {
+  color: #93c5fd !important;             /* subtle accent */
+  margin-bottom: .5rem;
+}
+
+#projects .card-text {
+  color: rgba(232,240,255,.85) !important;
+}
+
+#projects .btn,
+#projects a.btn {
+  border-color: #93c5fd !important;
+  color: #93c5fd !important;
+}
+
+#projects .btn:hover,
+#projects a.btn:hover {
+  background: #93c5fd !important;
+  color: #0b1220 !important;
+}

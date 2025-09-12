@@ -1,5 +1,10 @@
 <%- include('partials/header.ejs') %>
 
+<!-- Skip link improves accessibility by letting keyboard users bypass repetitive navigation to get to the main content quickly. -->
+<a href="#main" class="visually-hidden-focusable position-absolute top-0 start-0 m-2 px-3 py-2 bg-dark text-white rounded">
+  Skip to content
+</a>
+
 <!-- Filename: index1.ejs | Author: Juan Arevalo | Date: 02‑08‑2025 -->
 <!--
   This is an improved version of the home page (index.ejs) for jbaruz.dev.
@@ -13,7 +18,7 @@
 -->
 
 <!-- NAVIGATION BAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation" aria-label="Primary navigation">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#home">Juan&nbsp;Arevalo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,9 +26,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#home" aria-current="page">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <!-- NEW item: link to the separate GET projects page -->
+        <li class="nav-item"><a class="nav-link" href="/get">GET Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -71,12 +78,20 @@
           <!-- Purple organic shape -->
           <div style="width:320px; height:320px; background-color:#7367f0; border-radius:60% 40% 60% 40% / 40% 60% 40% 60%;"></div>
           <!-- User photo overlay -->
-          <img src="/assets/images/juan.png" alt="Juan Arevalo" style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); width:260px; height:260px; object-fit:cover; border-radius:50%;">
+          <img src="/assets/images/juan.png"
+               alt="Portrait of Juan Arevalo"
+               width="260" height="260"
+               loading="eager" decoding="async"
+               style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);
+                      width:260px; height:260px; object-fit:cover; border-radius:50%;">
         </div>
       </div>
     </div>
   </div>
 </header>
+
+<!-- MAIN CONTENT -->
+<main id="main">
 
 <!-- ABOUT SECTION -->
 <section id="about" class="py-5 bg-black text-light">
@@ -85,15 +100,15 @@
       <div class="col-lg-7">
         <h2 class="fw-bold mb-4">About Me</h2>
         <p>
-          I’m a <strong>Metallurgical Engineer</strong> focused on <strong>Ground Engaging Tools (GET)</strong> and wear solutions for open-pit mining. Over <strong>15+ years</strong> I’ve led field trials, failure analysis, and welding/wear programs that extended component life, reduced change-outs, and improved safety. Results include <strong>10–30% longer wear life</strong>, fewer unplanned stops, and lower total GET cost for haul fleets, shovels, and loaders.
+          I'm a Metallurgical Engineer specialising in Ground Engaging Tools and welding wear parts. As a seasoned wear
+          specialist in open‑pit mining, I've dedicated my career to enhancing the performance and durability of ground‑engaging tools.
+          My experience includes providing technical support, resolving complex issues and implementing solutions that optimise mining operations.
         </p>
         <p>
-          I work hands-on with maintenance, operations, and OEM/aftermarket partners—defining KPIs, running RCFA, and standardizing best practices across sites. In 2024 I completed the <strong>Software Engineering Technology – Artificial Intelligence (Fast-Track), Ontario College Advanced Diploma (with Honours), Centennial College</strong>, and now apply <strong>computer vision</strong> and <strong>predictive models</strong> to wear monitoring and maintenance planning. My goal: <strong>optimize uptime and unit cost</strong> by combining proven engineering with data-driven tools.
+          Recently, I've begun exploring how emerging technologies, including AI, can further augment my problem‑solving abilities and enable me to
+          work more efficiently with customers. My goal is to continue delivering effective solutions, optimising maintenance strategies and extending
+          equipment life by blending proven engineering practices with new technological insights.
         </p>
-
-
-        <p class="mb-0"><em>Strengths:</em> GET design & selection, wear mapping, RCFA, reliability & maintenance, vendor collaboration, site training, safety leadership, AI for condition monitoring.</p>
-
       </div>
       <div class="col-lg-5 text-center">
         <img src="/assets/images/logo1.png" alt="Logo" class="img-fluid mb-4" style="max-width:60%;">
@@ -101,15 +116,15 @@
         <div class="row text-center">
           <div class="col-4">
             <h3 class="fw-bold">15+</h3>
-            <p class="small">Years of experience</p>
+            <p class="small">Years experience</p>
           </div>
           <div class="col-4">
             <h3 class="fw-bold">50+</h3>
-            <p class="small">GET Projects delivered</p>
+            <p class="small">GET Projects</p>
           </div>
           <div class="col-4">
             <h3 class="fw-bold">20+</h3>
-            <p class="small">Tech Projects & Prototypes</p>
+            <p class="small">Tech Projects</p>
           </div>
         </div>
       </div>
@@ -125,7 +140,7 @@
       <!-- GET Projects Card -->
       <div class="col-md-6">
         <div class="card h-100 border-0 shadow-sm" style="background-color:#1b293b; border-radius:0.75rem;">
-          <div class="card-body">
+          <div class="card-body" style="background-color:inherit; color:#ffffff;">
             <h3 class="card-title text-primary">GET Projects</h3>
             <p class="card-text text-light opacity-75">Discover my projects related to Ground Engaging Tools. Explore how I have improved tool performance and durability in the mining sector.</p>
             <a href="/get" class="btn btn-outline-primary mt-2">Explore <i class="fas fa-arrow-right ms-1"></i></a>
@@ -135,7 +150,7 @@
       <!-- Tech Projects Card -->
       <div class="col-md-6">
         <div class="card h-100 border-0 shadow-sm" style="background-color:#1b293b; border-radius:0.75rem;">
-          <div class="card-body">
+          <div class="card-body" style="background-color:inherit; color:#ffffff;">
             <h3 class="card-title text-primary">Tech Projects</h3>
             <p class="card-text text-light opacity-75">Browse my technology projects, including AI applications, software tools and experiments that blend engineering with emerging tech.</p>
             <a href="/projects" class="btn btn-outline-primary mt-2">Explore <i class="fas fa-arrow-right ms-1"></i></a>
@@ -145,103 +160,6 @@
     </div>
   </div>
 </section>
-
-<!-- CONTACT SECTION -->
-  <main class="container py-4 float-sm-start">
-      <div class="jumbotron text-center text-light text-opacity-75">
-          <h1 class="display-7">Welcome to the <%=title%> page</h1>
-      </div>
-      <div class="d-flex flex-sm-row flex-column py-5 text-light">
-          <div class="p-2 flex-fill">
-              <div class="card-body text-center bg-black">
-                  <img src="../assets/images/juanAre.jpg" alt="Juan" class="rounded-circle img-fluid" style="width: 150px;">
-                  <h5 class="my-3">Juan Arevalo</h5>
-                  <p class=" text-secondary mb-1">Expert in Mining Equipment Wear Solutions with AI knowledge</p>
-                  <a href="/" class="text-secondary mb-3" style="display: block;" target="_blank">jbaruz.dev</a>
-                  <p class="text-secondary mb-4">Richmond Hill Area, Ontario, CA</p>
-              </div>
-      </div>
-      <div class="p-2 flex-fill">
-          <section style="background-color: black;">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-4">
-                          <div class="card-body p-0 bg-black">
-                              <ul class="list-group list-group-flush rounded-3">
-                                  <li
-                                  class="list-group-item d-flex justify-content-evenly align-items-center p-3 bg-black">
-                                  <i class="fab fa-github fa-lg" style="color: #686060;"></i>
-                                  <p class="mb-0 text-secondary fw-bold">Jbaruz</p>
-                                  </li>
-                                  <li
-                                      class="list-group-item d-flex justify-content-evenly align-items-center p-3 bg-black">
-                                      <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
-                                      <p class="mb-0 text-secondary fw-bold">@Jbaruz11</p>
-                                  </li>
-                                  <li
-                                      class="list-group-item d-flex justify-content-evenly align-items-center p-3 bg-black">
-                                      <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
-                                      <p class="mb-0 text-secondary fw-bold">jbaruz1</p>
-                                  </li>
-                                  <li
-                                      class="list-group-item d-flex justify-content-evenly align-items-center p-3 bg-black">
-                                      <i class="fab fa-linkedin fa-lg" style="color: #3b5998;"></i>
-                                      <p class="mb-0 text-secondary fw-bold">jbaruz</p>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                      <div class="col-lg-8">
-                          <div class="card mb-4 bg-primary">
-                              <div class="card-body text-light text-opacity-50 bg-primary">
-                                  <div class="row">
-                                      <div class="col-sm-3">
-                                          <p class="mb-0">Full Name</p>
-                                      </div>
-                                      <div class="col-sm-9">
-                                          <p class="mb-0 text-light">Juan Bibiano Arevalo Ruiz</p>
-                                      </div>
-                                  </div>
-                                  <hr>
-                                  <div class="row">
-                                      <div class="col-sm-3">
-                                          <p class="mb-0">Email</p>
-                                      </div>
-                                      <div class="col-sm-9">
-                                          <p class="mb-0 text-light">jbaruz@gmail.com</p>
-                                      </div>
-                                  </div>
-                                  <hr>
-                                  <div class="row">
-                                      <div class="col-sm-3">
-                                          <p class="mb-0">Mobile</p>
-                                      </div>
-                                      <meta name="format-detection" content="telephone=no">
-                                      <div class="col-sm-9">
-                                          <p class="mb-0 text-light"><span>(01) 437-557-6885</span></p>
-                                      </div>                                               
-                                  </div>
-                                  <hr>
-                                  <div class="row">
-                                      <div class="col-sm-3">
-                                          <p class="mb-0">Address</p>
-                                      </div>
-                                      <div class="col-sm-9">
-                                          <p class="mb-0 text-light">Richmond Hill Area, Toronto, Ontario, CA</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          </div>
-                      </div>
-                  </div>
-          </section>
-      </div>
-
-  </div>
-
-</main>
 
 <!-- IMPORTANT LINKS SECTION -->
 <section id="links" class="py-5 bg-dark text-light">
@@ -427,67 +345,297 @@
   </div>
 </section>
 
-<!-- FEATURED AI & TECH PROJECTS SLIDER -->
+<!-- FEATURED AI & TECH PROJECTS SLIDER (FULL LIST) -->
 <section id="more-projects" class="py-5 bg-black text-light">
   <div class="container">
     <h2 class="fw-bold mb-4 text-center">Featured AI &amp; Tech Projects</h2>
-    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <div id="heroProjectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Kotlin Video Project"></button>
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="1" aria-label="RAG Chatbot"></button>
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="2" aria-label="Mathpractice (2nd)"></button>
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="3" aria-label="Mathpractice (1st)"></button>
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="4" aria-label="Waste Bin Classification"></button>
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="5" aria-label="Brain Tumor DL"></button>
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="6" aria-label="AI Recruiter (AWS)"></button>
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="7" aria-label="Deep Learning Chatbot"></button>
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="8" aria-label="Supervised Learning – Toronto"></button>
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="9" aria-label="Tournament App"></button>
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="10" aria-label="Personal Portfolio"></button>
+        <button type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide-to="11" aria-label="Remote Wear Monitoring App"></button>
+      </div>
+
       <div class="carousel-inner">
-        <!-- Slide 1: Kotlin Video Project -->
+        <!-- 1) Kotlin Video Project -->
         <div class="carousel-item active">
-          <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <img src="../assets/images/Kotlin_logo.png" alt="Kotlin project" class="img-fluid d-block mx-auto" style="max-height:300px; object-fit:contain;">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/Kotlin_logo.png" alt="Kotlin Video Project" class="img-fluid project-hero-img">
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <h3 class="fw-bold">Kotlin Video Project</h3>
-              <p>A research‑phase project exploring image management using generative AI and traditional models to achieve optimal results.</p>
-              <a href="/projects" class="btn btn-primary">View <i class="fas fa-arrow-right ms-2"></i></a>
+              <p class="lead text-light text-opacity-75 mb-4">
+                Research-phase project exploring image management using generative AI and traditional models to achieve optimal results.
+              </p>
+              <a href="/projects#postgraduateProjects" class="btn btn-primary btn-lg">
+                View <i class="fas fa-arrow-right ms-2"></i>
+              </a>
             </div>
           </div>
         </div>
-        <!-- Slide 2: RAG Chatbot -->
+
+        <!-- 2) RAG Chatbot -->
         <div class="carousel-item">
-          <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <img src="../assets/images/RAG_logo.png" alt="RAG chatbot" class="img-fluid d-block mx-auto" style="max-height:300px; object-fit:contain;">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/RAG_logo.png" alt="RAG Chatbot" class="img-fluid project-hero-img">
             </div>
-            <div class="col-md-6">
-              <h3 class="fw-bold">RAG Chatbot</h3>
-              <p>Developing a cutting‑edge chatbot based on retrieval‑augmented techniques and recent research papers.</p>
-              <a href="/projects" class="btn btn-primary">View <i class="fas fa-arrow-right ms-2"></i></a>
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Retrieval-Augmented Chatbot</h3>
+              <p class="lead text-light text-opacity-75 mb-4">
+                Team project applying modern RAG techniques to improve retrieval and response quality. (Demo ready)
+              </p>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://minningbots.com/" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-lg">
+                  Live Demo <i class="fas fa-external-link-alt ms-2"></i>
+                </a>
+                <a href="/projects#postgraduateProjects" class="btn btn-outline-light btn-lg">Details</a>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Slide 3: Math Practice -->
+
+        <!-- 3) Mathpractice (2nd) -->
         <div class="carousel-item">
-          <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <img src="../assets/images/mathpractice1.png" alt="Math Practice" class="img-fluid d-block mx-auto" style="max-height:300px; object-fit:contain;">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/mathpractice1.png" alt="Mathpractice second version" class="img-fluid project-hero-img">
             </div>
-            <div class="col-md-6">
-              <h3 class="fw-bold">Math Practice (2nd Version)</h3>
-              <p>Enhancing the original math app with AI to provide personalised feedback and improve learning outcomes.</p>
-              <a href="/projects" class="btn btn-primary">View <i class="fas fa-arrow-right ms-2"></i></a>
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Mathpractice (2nd Version)</h3>
+              <p class="lead text-light text-opacity-75 mb-4">
+                Adds AI-driven personalized feedback to strengthen conceptual understanding.
+              </p>
+              <a href="/projects#postgraduateProjects" class="btn btn-primary btn-lg">View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4) Mathpractice (1st) -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/mathpractice.png" alt="Mathpractice first version" class="img-fluid project-hero-img">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Mathpractice (1st Version)</h3>
+              <p class="lead text-light text-opacity-75 mb-4">
+                Personalized arithmetic practice app with a rule-based engine that adapts to weaknesses.
+              </p>
+              <a href="/projects#postgraduateProjects" class="btn btn-primary btn-lg">View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5) Waste Bin Classification -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/waste_bin.png" alt="Waste bin classification grid" class="img-fluid project-hero-img">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Waste Bin Classification</h3>
+              <p class="lead text-light text-opacity-75 mb-4">
+                CNN model to classify bins as “full” vs “empty”; tracked experiments with Weights &amp; Biases.
+              </p>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://github.com/Jbaruz/waste_bin_classificcation" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">GitHub</a>
+                <a href="/projects#postgraduateProjects" class="btn btn-primary btn-lg">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6) Brain Tumor Classification & Generation -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/deeplearn.png" alt="Brain tumor DL project" class="img-fluid project-hero-img">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Brain Tumor: Classification &amp; Generation</h3>
+              <p class="lead text-light text-opacity-75 mb-4">
+                Supervised/unsupervised &amp; SOTA pipelines for classification and image generation (A+ grade).
+              </p>
+              <a href="https://github.com/ryaoltech/COMP263_deeplearning_G5_tumorbrain" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7) Cloud ML – AI Recruiter -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/recruiter.png" alt="AI Recruiter serverless app" class="img-fluid project-hero-img">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Cloud Machine Learning – AI Recruiter</h3>
+              <p class="lead text-light text-opacity-75 mb-4">
+                Serverless AWS app for video analysis and match-percentage reports (Transcribe/Comprehend/Textract).
+              </p>
+              <a href="/projects#collegeProjects" class="btn btn-primary btn-lg">View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8) Deep Learning Chatbot -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/chatbot.png" alt="Deep Learning Chatbot UI" class="img-fluid project-hero-img">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Deep Learning Chatbot</h3>
+              <p class="lead text-light text-opacity-75 mb-4">
+                Full-stack chatbot (backend focus) built for a college project (A+ grade).
+              </p>
+              <a href="https://github.com/Jbaruz/Deep_Learning_Chatbot" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9) Supervised Learning – Toronto Collisions -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/fatalities_TO.png" alt="Toronto collisions visualization" class="img-fluid project-hero-img">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Supervised Learning – Toronto Collisions</h3>
+              <p class="lead text-light text-opacity-75 mb-4">
+                Probabilistic model to predict accidents by conditions and behavior patterns.
+              </p>
+              <a href="/projects#collegeProjects" class="btn btn-primary btn-lg">View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10) Tournament Creation -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/tournament_web.png" alt="Tournament management app" class="img-fluid project-hero-img">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Tournament Creation – Time Travellers</h3>
+              <p class="lead text-light text-opacity-75 mb-4">
+                Group app for tournament management using Angular, Node, Express &amp; MongoDB.
+              </p>
+              <a href="/projects#collegeProjects" class="btn btn-primary btn-lg">View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11) Personal Portfolio -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/perso.png" alt="Personal portfolio" class="img-fluid project-hero-img">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Personal Portfolio (Web App)</h3>
+              <p class="lead text-light text-opacity-75 mb-4">
+                Ongoing sandbox to experiment with web stacks and design techniques.
+              </p>
+              <a href="https://github.com/Jbaruz/jbaruz" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12) Remote Wear Monitoring App -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+              <img src="/assets/images/tech_award.jpg" alt="Technology award photo" class="img-fluid project-hero-img">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Remote Wear Monitoring App</h3>
+              <p class="lead text-light text-opacity-75 mb-4">
+                Mobile app to monitor GET wear remotely, reduce unplanned downtime, and minimize on-site interactions.
+              </p>
+              <a href="/projects#pivotTechnology" class="btn btn-primary btn-lg">View</a>
             </div>
           </div>
         </div>
       </div>
+
       <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide="prev" aria-label="Previous">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#heroProjectsCarousel" data-bs-slide="next" aria-label="Next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
       </button>
     </div>
+
     <div class="text-center mt-4">
-      <a href="/projects" class="btn btn-outline-light">Explore All Projects</a>
+      <a href="/projects" class="btn btn-outline-light btn-lg px-4">Explore All Projects</a>
     </div>
   </div>
 </section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-5" style="background-color:#0d1b2a; color:#fff;">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Left: profile image -->
+      <div class="col-md-5 text-center">
+        <img src="/assets/images/juan.png"
+             alt="Juan Arevalo smiling by a window with city lights"
+             class="img-fluid rounded shadow"
+             style="max-width:90%; border-radius:0.75rem;">
+      </div>
+
+      <!-- Right: introduction and details -->
+      <div class="col-md-7">
+        <h2 class="fw-bold mb-3">Let’s Connect</h2>
+        <p class="fs-5 mb-4">
+          With <strong>15+ years</strong> of experience in GET solutions and AI, I’m always open to discussing new projects, creative collaborations or industry challenges.  
+          Whether you have a question or just want to say hi, feel free to get in touch.
+        </p>
+        <ul class="list-unstyled fs-5 mb-4">
+          <li><i class="fas fa-envelope me-2"></i><strong>Email:</strong> <a href="mailto:jbaruz@gmail.com" class="text-primary">jbaruz@gmail.com</a></li>
+          <li><i class="fas fa-phone me-2"></i><strong>Phone:</strong> <a href="tel:+14375576885" class="text-primary">+1 437‑557‑6885</a></li>
+          <li><i class="fas fa-map-marker-alt me-2"></i><strong>Location:</strong> Richmond Hill Area, Ontario, CA</li>
+        </ul>
+        <!-- Stats similar to your About section -->
+        <div class="row text-center mb-4">
+          <div class="col-4">
+            <h3 class="fw-bold">15+</h3>
+            <p class="small">Years Experience</p>
+          </div>
+          <div class="col-4">
+            <h3 class="fw-bold">50+</h3>
+            <p class="small">GET Projects</p>
+          </div>
+          <div class="col-4">
+            <h3 class="fw-bold">20+</h3>
+            <p class="small">Tech Projects</p>
+          </div>
+        </div>
+        <!-- CTA button -->
+        <a href="mailto:jbaruz@gmail.com" class="btn btn-primary btn-lg">
+          Leave a Message <i class="fas fa-paper-plane ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End of main content -->
+</main>
 
 <!-- FOOTER & SCRIPTS -->
 <section class="bg-dark text-light py-4">

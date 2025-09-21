@@ -165,185 +165,233 @@
 <section id="links" class="py-5 bg-dark text-light">
   <div class="container">
     <h2 class="fw-bold mb-4 text-center">Important Links</h2>
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs justify-content-center" id="linkTabs" role="tablist">
-      <li class="nav-item"><a class="nav-link active" id="lc-tab" data-bs-toggle="tab" href="#learningCenter" role="tab" aria-controls="learningCenter" aria-selected="true">Learning&nbsp;Center</a></li>
-      <li class="nav-item"><a class="nav-link" id="tools-tab" data-bs-toggle="tab" href="#tools" role="tab" aria-controls="tools" aria-selected="false">Tools</a></li>
-      <li class="nav-item"><a class="nav-link" id="ml-tab" data-bs-toggle="tab" href="#machineLearning" role="tab" aria-controls="machineLearning" aria-selected="false">Machine&nbsp;Learning</a></li>
-      <li class="nav-item"><a class="nav-link" id="ai-tab" data-bs-toggle="tab" href="#aiTools" role="tab" aria-controls="aiTools" aria-selected="false">AI&nbsp;Tools</a></li>
-    </ul>
-    <!-- Tab content -->
-    <div class="tab-content mt-3" id="linkTabContent">
-      <!-- Learning Center -->
-      <div class="tab-pane fade show active" id="learningCenter" role="tabpanel" aria-labelledby="lc-tab">
-        <div class="row justify-content-center">
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-brands fa-python card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Python</h6>
-                <a href="https://www.python.org/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+    <div class="accordion" id="linksAccordion">
+      <!-- Category: Learning Center -->
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-dark text-light collapsed d-flex justify-content-between align-items-center"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#linksLearning"
+                  aria-expanded="false" aria-controls="linksLearning">
+            <span><i class="fas fa-book-open me-2"></i>Learning Center</span>
+            <i class="fas fa-chevron-down ms-2"></i>
+          </button>
+        </h2>
+        <div id="linksLearning" class="accordion-collapse collapse" data-bs-parent="#linksAccordion">
+          <div class="accordion-body pt-1">
+            <!-- Each link: name + bar + percent + visit -->
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Python</strong>
+                <small>95%</small>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-brands fa-java card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Java</h6>
-                <a href="https://dev.java/learn/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              <div class="progress mb-1" style="height:0.3rem;">
+                <div class="progress-bar" style="width:95%; background-color:#7367f0;"></div>
               </div>
+              <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-solid fa-k card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Kotlin</h6>
-                <a href="https://kotlinlang.org/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Java</strong><small>90%</small>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-brands fa-react card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
-              <div class="card-body">
-                <h6 class="card-title">React</h6>
-                <a href="https://react.dev/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              <div class="progress mb-1" style="height:0.3rem;">
+                <div class="progress-bar" style="width:90%; background-color:#7367f0;"></div>
               </div>
+              <a href="https://dev.java/learn/" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- Tools -->
-      <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="tools-tab">
-        <div class="row justify-content-center">
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-solid fa-tent card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Craft</h6>
-                <a href="https://www.craft.do/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Kotlin</strong><small>85%</small>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-brands fa-jira card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Jira</h6>
-                <a href="https://www.atlassian.com/software/jira" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              <div class="progress mb-1" style="height:0.3rem;">
+                <div class="progress-bar" style="width:85%; background-color:#7367f0;"></div>
               </div>
+              <a href="https://kotlinlang.org/" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-solid fa-envelope-open card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Milanote</h6>
-                <a href="https://milanote.com/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>React</strong><small>85%</small>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-brands fa-bootstrap card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Bootstrap</h6>
-                <a href="https://getbootstrap.com/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+              <div class="progress mb-1" style="height:0.3rem;">
+                <div class="progress-bar" style="width:85%; background-color:#7367f0;"></div>
               </div>
+              <a href="https://react.dev/" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
+
+            <!-- Repeat this pattern for any other Learning Center links you have -->
           </div>
         </div>
       </div>
+
+      <!-- Category: Tools -->
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-dark text-light collapsed d-flex justify-content-between align-items-center"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#linksTools"
+                  aria-expanded="false" aria-controls="linksTools">
+            <span><i class="fas fa-toolbox me-2"></i>Tools</span>
+            <i class="fas fa-chevron-down ms-2"></i>
+          </button>
+        </h2>
+        <div id="linksTools" class="accordion-collapse collapse" data-bs-parent="#linksAccordion">
+          <div class="accordion-body pt-1">
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Craft</strong><small>90%</small>
+              </div>
+              <div class="progress mb-1" style="height:0.3rem;">
+                <div class="progress-bar" style="width:90%; background-color:#7367f0;"></div>
+              </div>
+              <a href="https://www.craft.do/" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Jira</strong><small>85%</small>
+              </div>
+              <div class="progress mb-1" style="height:0.3rem;">
+                <div class="progress-bar" style="width:85%; background-color:#7367f0;"></div>
+              </div>
+              <a href="https://www.atlassian.com/software/jira" target="_blank"
+                 rel="noopener noreferrer" class="btn btn-sm btn-outline-light w-auto">Visit</a>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Milanote</strong><small>80%</small>
+              </div>
+              <div class="progress mb-1" style="height:0.3rem;">
+                <div class="progress-bar" style="width:80%; background-color:#7367f0;"></div>
+              </div>
+              <a href="https://milanote.com/" target="_blank"
+                 rel="noopener noreferrer" class="btn btn-sm btn-outline-light w-auto">Visit</a>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Bootstrap</strong><small>85%</small>
+              </div>
+              <div class="progress mb-1" style="height:0.3rem;">
+                <div class="progress-bar" style="width:85%; background-color:#7367f0;"></div>
+              </div>
+              <a href="https://getbootstrap.com/" target="_blank"
+                 rel="noopener noreferrer" class="btn btn-sm btn-outline-light w-auto">Visit</a>
+            </div>
+            <!-- Add more Tools items here -->
+          </div>
+        </div>
+      </div>
+
       <!-- Machine Learning -->
-      <div class="tab-pane fade" id="machineLearning" role="tabpanel" aria-labelledby="ml-tab">
-        <div class="row justify-content-center">
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fas fa-table card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Pandas</h6>
-                <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-dark text-light collapsed d-flex justify-content-between align-items-center"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#linksML"
+                  aria-expanded="false" aria-controls="linksML">
+            <span><i class="fas fa-brain fa-lg me-2"></i>Machine Learning</span>
+            <i class="fas fa-chevron-down ms-2"></i>
+          </button>
+        </h2>
+        <div id="linksML" class="accordion-collapse collapse" data-bs-parent="#linksAccordion">
+          <div class="accordion-body pt-1">
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Pandas</strong><small>90%</small>
               </div>
+              <div class="progress mb-1"><div class="progress-bar" style="width:90%; background-color:#7367f0;"></div></div>
+              <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html" target="_blank"
+                 rel="noopener noreferrer" class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-solid fa-n card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
-              <div class="card-body">
-                <h6 class="card-title">NumPy</h6>
-                <a href="https://numpy.org/doc/stable/index.html" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>NumPy</strong><small>80%</small>
               </div>
+              <div class="progress mb-1"><div class="progress-bar" style="width:80%; background-color:#7367f0;"></div></div>
+              <a href="https://numpy.org/doc/stable/index.html" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fas fa-robot card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Scikit‑learn</h6>
-                <a href="https://scikit-learn.org/stable/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Scikit‑learn</strong><small>85%</small>
               </div>
+              <div class="progress mb-1"><div class="progress-bar" style="width:85%; background-color:#7367f0;"></div></div>
+              <a href="https://scikit-learn.org/stable/" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fas fa-laptop-code card-img mt-3 mb-3" style="font-size:3.5em;color:#000;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Deep Learning</h6>
-                <a href="https://www.deeplearningbook.org" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Deep Learning</strong><small>90%</small>
               </div>
+              <div class="progress mb-1"><div class="progress-bar" style="width:90%; background-color:#7367f0;"></div></div>
+              <a href="https://www.deeplearningbook.org" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
+            <!-- Add more ML items here -->
           </div>
         </div>
       </div>
+
       <!-- AI Tools -->
-      <div class="tab-pane fade" id="aiTools" role="tabpanel" aria-labelledby="ai-tab">
-        <div class="row justify-content-center">
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-brands fa-square-google-plus card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Google AI Studio</h6>
-                <a href="https://aistudio.google.com/" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-dark text-light collapsed d-flex justify-content-between align-items-center"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#linksAI"
+                  aria-expanded="false" aria-controls="linksAI">
+            <span><i class="fas fa-robot me-2"></i>AI Tools</span>
+            <i class="fas fa-chevron-down ms-2"></i>
+          </button>
+        </h2>
+        <div id="linksAI" class="accordion-collapse collapse" data-bs-parent="#linksAccordion">
+          <div class="accordion-body pt-1">
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Google AI Studio</strong><small>85%</small>
               </div>
+              <div class="progress mb-1"><div class="progress-bar" style="width:85%; background-color:#7367f0;"></div></div>
+              <a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-solid fa-flask card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Google Labs</h6>
-                <a href="https://labs.google" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Google Labs</strong><small>80%</small>
               </div>
+              <div class="progress mb-1"><div class="progress-bar" style="width:80%; background-color:#7367f0;"></div></div>
+              <a href="https://labs.google" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-solid fa-star-of-life card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
-              <div class="card-body">
-                <h6 class="card-title">Claude AI</h6>
-                <a href="https://claude.ai/new" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>Claude AI</strong><small>80%</small>
               </div>
+              <div class="progress mb-1"><div class="progress-bar" style="width:80%; background-color:#7367f0;"></div></div>
+              <a href="https://claude.ai/new" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-center h-100">
-              <i class="fa-solid fa-atom card-img mt-3 mb-3" style="font-size:3.5em;color:black;"></i>
-              <div class="card-body">
-                <h6 class="card-title">ChatGPT</h6>
-                <a href="https://chat.openai.com" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit</a>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <strong>ChatGPT</strong><small>90%</small>
               </div>
+              <div class="progress mb-1"><div class="progress-bar" style="width:90%; background-color:#7367f0;"></div></div>
+              <a href="https://chat.openai.com" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-light w-auto">Visit</a>
             </div>
+            <!-- Add more AI Tools items here -->
           </div>
         </div>
       </div>
     </div>
+
     <div class="text-center mt-4">
       <a href="/link" class="btn btn-outline-light">Explore All Links</a>
     </div>
   </div>
 </section>
+
+
 
 <!-- FEATURED AI & TECH PROJECTS SLIDER (FULL LIST) -->
 <section id="more-projects" class="py-5 bg-black text-light">
@@ -592,7 +640,7 @@
     <div class="row align-items-center g-5">
       <!-- Left: profile image -->
       <div class="col-md-5 text-center">
-        <img src="/assets/images/juan.png"
+        <img src="/assets/images/juan1.png"
              alt="Juan Arevalo smiling by a window with city lights"
              class="img-fluid rounded shadow"
              style="max-width:90%; border-radius:0.75rem;">
